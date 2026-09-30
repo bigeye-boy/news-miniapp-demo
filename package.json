@@ -11,12 +11,12 @@
     "submit": "neux submit"
   },
   "devDependencies": {
-    "@neuxnet/neux-cli": "^0.2.9",
+    "@neuxnet/neux-cli": "^0.2.11",
     "@neuxnet/neux-miniapp-types": "^0.1.8"
   },
   "dependencies": {
-    "npm-components": "file:./npm-components",
     "@vant/weapp": "^1.11.7",
-    "dayjs": "^1.11.23"
+    "dayjs": "^1.11.23",
+    "npm-components": "file:./npm-components"
   }
 }
