@@ -121,7 +121,7 @@ NEUX_CLI_KEY_NXB6T2E7B73C83E
 
 Set the secret to the CLI key for app `nxb6t2e7b73c83e`. Do not add this key to
 `project.config.json`, `.env`, or repository secrets stored in source files.
-The workflow uses version name `1.0.<GitHub run number>` and version code
+The workflow uses version name `1.1.(4 + <GitHub run number>)` and version code
 `1000 + <GitHub run number>`; increase `NEUX_VERSION_CODE_OFFSET` in the
 workflow if the signed service already has a higher version code.
 
