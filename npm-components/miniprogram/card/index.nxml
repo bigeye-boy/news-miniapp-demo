@@ -1,0 +1,5 @@
+<view class="card {{theme}}">
+  <text class="title">{{title}}</text>
+  <text nx:if="{{subtitle}}" class="subtitle">{{subtitle}}</text>
+  <slot></slot>
+</view>

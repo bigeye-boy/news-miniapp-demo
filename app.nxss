@@ -1,0 +1,108 @@
+/* Shared page foundation and host text scale. */
+page {
+  min-height: 100vh;
+  background: #f3f5f4;
+  color: #16221f;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.font-large {
+  --host-font-scale: 1.15;
+}
+
+.font-xlarge {
+  --host-font-scale: 1.3;
+}
+
+.font-normal {
+  --host-font-scale: 1;
+}
+
+/* RTL layout helpers. */
+.direction-rtl {
+  direction: rtl;
+}
+
+.direction-rtl .profile-copy,
+.direction-rtl .news-body {
+  margin-left: 0;
+  margin-right: 24rpx;
+}
+
+.direction-rtl .news-body {
+  padding-right: 20rpx;
+  padding-left: 0;
+}
+
+/* Shared dark theme overrides. */
+.theme-dark {
+  color: #f4f7f5;
+  background: #101815;
+}
+
+.page.theme-dark,
+.detail-page.theme-dark {
+  background: #101815 !important;
+}
+
+.page.theme-dark .news-card,
+.detail-page.theme-dark .detail-header {
+  background: #18231f;
+  border-color: #2c3a34;
+}
+
+.theme-dark .header,
+.theme-dark .news-card,
+.theme-dark .field-input,
+.theme-dark .field-textarea {
+  background: #18231f;
+}
+
+.theme-dark .title,
+.theme-dark .detail-title,
+.theme-dark .news-title {
+  color: #f4f7f5;
+}
+
+.theme-dark .desc,
+.theme-dark .detail-source,
+.theme-dark .news-source,
+.theme-dark .profile-row,
+.theme-dark .label,
+.theme-dark .avatar-area {
+  color: #b9c8c0;
+}
+
+.theme-dark .category {
+  color: #b9c8c0;
+  background: #25332d;
+}
+
+.theme-dark .field-input,
+.theme-dark .field-textarea {
+  color: #f4f7f5;
+  border-color: #51645a;
+}
+
+.theme-dark .section-title,
+.theme-dark .theme-title,
+.theme-dark .profile-heading,
+.theme-dark .brand-name,
+.theme-dark .section-label {
+  color: #f4f7f5;
+}
+
+.theme-dark .theme-desc {
+  color: #b9c8c0;
+}
+
+.theme-dark .theme-row {
+  border-color: #33453b;
+}
+
+.theme-dark .settings,
+.theme-dark .edit-button,
+.theme-dark .profile-header {
+  background: #18231f;
+  border-color: #33453b;
+}

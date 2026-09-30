@@ -1,0 +1,115 @@
+<!-- Profile page uses the same theme classes as the News page. -->
+<view class="page {{appearance.themeClass}} {{appearance.directionClass}} {{appearance.fontClass}}">
+  <!-- Account heading -->
+  <view class="profile-heading">
+    <text class="section-label">ACCOUNT</text>
+    <text class="profile-heading-title">Profile</text>
+  </view>
+
+  <!-- User summary and edit action -->
+  <view class="profile-header">
+    <image nx:if="{{profile.avatar}}" class="avatar" mode="aspectFill" src="{{profile.avatar}}" />
+    <view nx:else class="avatar placeholder">N</view>
+    <view class="profile-copy">
+      <text class="title">{{profile.name}}</text>
+      <text class="desc">{{profile.bio}}</text>
+      <text class="updated">Updated {{lastUpdated}}</text>
+    </view>
+    <button class="edit-button" type="default" bindtap="editProfile">
+      <text class="edit-icon">✎</text>
+    </button>
+  </view>
+
+  <!-- Third-party npm component for notification preferences. -->
+  <view class="notification-section">
+    <view>
+      <text class="notification-title">News notifications</text>
+      <text class="notification-desc">Receive updates about new stories</text>
+    </view>
+    <van-switch
+      checked="{{profile.notifications}}"
+      active-color="#2d7950"
+      inactive-color="#cbd5e1"
+      bind:change="onNotificationsChange"
+    />
+  </view>
+
+  <!-- Local npm package components: properties, slots, and events. -->
+  <view class="npm-components">
+    <demo-card
+      title="NPM Components"
+      subtitle="npm-components"
+      theme="{{appearance.themeClass}}"
+    >
+      <view class="npm-card-content">
+        <view class="npm-card-header">
+          <demo-badge text="Local package" type="success" theme="{{appearance.themeClass}}" />
+          <demo-badge text="Profile demo" type="info" theme="{{appearance.themeClass}}" />
+        </view>
+        <view class="npm-stepper-row">
+          <view>
+            <text class="npm-stepper-title">Daily reading goal</text>
+            <text class="npm-stepper-desc">The page receives the stepper change event.</text>
+          </view>
+          <demo-stepper
+            value="{{profile.readingGoal}}"
+            min="{{1}}"
+            max="{{20}}"
+            theme="{{appearance.themeClass}}"
+            bind:change="onReadingGoalChange"
+          />
+        </view>
+      </view>
+    </demo-card>
+  </view>
+
+  <!-- Appearance settings -->
+  <view class="settings">
+    <text class="section-label">PREFERENCES</text>
+    <text class="section-title">Appearance</text>
+    <view class="theme-row" bindtap="selectTheme">
+      <view>
+        <text class="theme-title">Theme</text>
+        <text class="theme-desc">Choose how the app follows the host</text>
+      </view>
+      <text class="theme-value">{{appearance.themeLabel}}</text>
+    </view>
+  </view>
+
+  <!-- The parent supplies custom content through the drawer slot. -->
+  <view class="settings drawer-demo">
+    <text class="section-label">COMPONENT EVENT</text>
+    <view class="theme-row drawer-trigger" bindtap="openDrawer">
+      <view>
+        <text class="theme-title">Reusable drawer</text>
+        <text class="theme-desc">Open a shared component with page-defined content.</text>
+      </view>
+      <text class="theme-value">Open</text>
+    </view>
+  </view>
+
+  <app-drawer
+    visible="{{drawerVisible}}"
+    title="Quick actions"
+    theme="{{appearance.themeClass}}"
+    bind:close="closeDrawer"
+  >
+    <view class="drawer-content">
+      <text class="drawer-content-desc">These actions are rendered by the Profile page.</text>
+      <button
+        class="drawer-action"
+        type="default"
+        bindtap="editProfile"
+      >
+        Edit profile
+      </button>
+      <button
+        class="drawer-action"
+        type="default"
+        bindtap="toggleNotifications"
+      >
+        {{profile.notifications ? 'Turn notifications off' : 'Turn notifications on'}}
+      </button>
+    </view>
+  </app-drawer>
+</view>

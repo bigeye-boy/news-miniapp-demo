@@ -1,0 +1,18 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://neuxnet.com/schemas/neux/neux-config.schema.json",
+  "title": "Neux CLI project configuration",
+  "description": "Non-secret project settings read by the Neux CLI. Never put CLI keys in this file.",
+  "type": "object",
+  "properties": {
+    "serverUrl": { "type": "string", "format": "uri", "description": "Signed service base URL." },
+    "appId": { "type": "string" },
+    "appid": { "type": "string" },
+    "profile": { "type": "string" },
+    "version": { "type": "string" },
+    "versionName": { "type": "string" },
+    "versionCode": { "type": "integer", "minimum": 1 }
+  },
+  "not": { "anyOf": [ { "required": ["key"] }, { "required": ["cliKey"] }, { "required": ["neuxCliKey"] } ] },
+  "additionalProperties": true
+}

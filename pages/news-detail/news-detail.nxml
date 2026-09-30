@@ -1,0 +1,4 @@
+<!-- The selected news page is intentionally focused on the web-view. -->
+<view class="detail-page {{appearance.themeClass}} {{appearance.directionClass}} {{appearance.fontClass}}">
+  <web-view class="news-web-view" src="{{articleUrl}}" />
+</view>

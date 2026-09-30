@@ -1,0 +1,127 @@
+<!-- Page theme classes are provided by app.js. -->
+<view class="page {{appearance.themeClass}} {{appearance.directionClass}} {{appearance.fontClass}}">
+  <!-- Brand header -->
+  <view class="brand-bar">
+    <view>
+      <text class="brand-name">NEWSROOM</text>
+      <text class="brand-caption">A clear view of what matters</text>
+    </view>
+  </view>
+
+  <!-- Weather loading state -->
+  <view nx:if="{{weatherLoading}}" class="weather-card skeleton-card">
+    <view class="skeleton-weather-main">
+      <view class="skeleton-line skeleton-location"></view>
+      <view class="skeleton-line skeleton-description"></view>
+      <view class="skeleton-line skeleton-temperature"></view>
+    </view>
+    <view class="skeleton-weather-side">
+      <view class="skeleton-line skeleton-wind"></view>
+      <view class="skeleton-line skeleton-source"></view>
+    </view>
+  </view>
+
+  <!-- Weather result and location refresh action -->
+  <view nx:if="{{!weatherLoading}}" class="weather-card">
+    <view class="weather-main">
+      <text class="section-label">LOCAL CONDITIONS</text>
+      <view class="weather-location-row">
+        <text class="weather-location">{{weather.location}}</text>
+        <button class="weather-location-button" type="button" bindtap="refreshWeather">↻</button>
+      </view>
+      <text class="weather-description">{{weather.description}}</text>
+      <text class="weather-temperature">{{weather.temperature}}°C</text>
+    </view>
+    <view class="weather-side">
+      <text class="weather-wind">Wind {{weather.windSpeed}} km/h</text>
+      <text class="weather-source">Open-Meteo</text>
+    </view>
+  </view>
+  <text nx:if="{{weatherError}}" class="weather-error">{{weatherError}}</text>
+
+  <!-- Recommended stories stay stable when only the category changes. -->
+  <view nx:if="{{loading && !recommendations.length}}" class="recommendation-skeleton skeleton-block"></view>
+  <view nx:if="{{recommendations.length}}" class="recommendation">
+    <text class="section-label">EDITOR'S PICKS</text>
+    <swiper class="recommendation-swiper" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}">
+      <swiper-item
+        nx:for="{{recommendations}}"
+        nx:key="link"
+        class="recommendation-item"
+        data-item="{{item}}"
+        bindtap="openNews"
+      >
+        <image class="recommendation-image" mode="aspectFill" src="{{item.og}}" />
+        <view class="recommendation-overlay">
+          <text class="recommendation-label">Recommended</text>
+          <text class="recommendation-title">{{item.title}}</text>
+          <text class="recommendation-source">{{item.source}}</text>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <!-- Horizontal category filter -->
+  <scroll-view nx:if="{{loading}}" class="categories skeleton-categories" scroll-x="{{true}}">
+    <view class="skeleton-category"></view>
+    <view class="skeleton-category"></view>
+    <view class="skeleton-category"></view>
+    <view class="skeleton-category"></view>
+  </scroll-view>
+
+  <scroll-view nx:if="{{!loading}}" class="categories" scroll-x="{{true}}">
+    <view
+      nx:for="{{categories}}"
+      nx:key="*this"
+      class="category {{activeCategory === item ? 'active' : ''}}"
+      data-category="{{item}}"
+      bindtap="selectCategory"
+    >
+      {{item}}
+    </view>
+  </scroll-view>
+
+  <!-- Loading and error messages -->
+  <text nx:if="{{!loading}}" class="section-label news-section-label">LATEST COVERAGE</text>
+  <text nx:if="{{error}}" class="notice">{{error}}</text>
+  <text nx:if="{{!loading && !news.length}}" class="state">No news available.</text>
+
+  <!-- News list loading state -->
+  <view nx:if="{{loading}}" class="news-list">
+    <view class="skeleton-news-card">
+      <view class="skeleton-news-image"></view>
+      <view class="skeleton-news-body">
+        <view class="skeleton-line skeleton-news-title"></view>
+        <view class="skeleton-line skeleton-news-title short"></view>
+        <view class="skeleton-line skeleton-news-source"></view>
+      </view>
+    </view>
+    <view class="skeleton-news-card">
+      <view class="skeleton-news-image"></view>
+      <view class="skeleton-news-body">
+        <view class="skeleton-line skeleton-news-title"></view>
+        <view class="skeleton-line skeleton-news-title short"></view>
+        <view class="skeleton-line skeleton-news-source"></view>
+      </view>
+    </view>
+    <view class="skeleton-news-card">
+      <view class="skeleton-news-image"></view>
+      <view class="skeleton-news-body">
+        <view class="skeleton-line skeleton-news-title"></view>
+        <view class="skeleton-line skeleton-news-title short"></view>
+        <view class="skeleton-line skeleton-news-source"></view>
+      </view>
+    </view>
+  </view>
+
+  <!-- News list result -->
+  <view nx:if="{{!loading}}" class="news-list">
+    <view nx:for="{{news}}" nx:key="link" class="news-card" data-item="{{item}}" bindtap="openNews">
+      <image class="news-image" mode="aspectFill" src="{{item.og}}" />
+      <view class="news-body">
+        <text class="news-title">{{item.title}}</text>
+        <text class="news-source">{{item.source}}</text>
+      </view>
+    </view>
+  </view>
+</view>

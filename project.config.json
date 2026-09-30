@@ -1,0 +1,34 @@
+{
+  "description": "Neux mini program project.",
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "compileType": "miniprogram",
+  "libVersion": "3.3.3",
+  "appid": "nxkw5ccasbkpn1z",
+  "projectname": "newsdemo",
+  "miniprogramRoot": "",
+  "versionName": "1.0.7",
+  "versionCode": 1,
+  "neuxCli": {
+    "serverUrl": "https://demo-c.paas.superapp.neuvision.cn"
+  },
+  "condition": {},
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  },
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

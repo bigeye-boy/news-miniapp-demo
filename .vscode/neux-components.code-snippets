@@ -1,0 +1,756 @@
+{
+  "Neux audio component": {
+    "prefix": "nxAudio",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<audio",
+      "  src=\"{{${1:src}}}\"",
+      "  name=\"${2:name}\"",
+      "  author=\"${3:author}\"",
+      "  poster=\"${4:poster}\"",
+      "  controls=\"${5|true,false|}\"",
+      "  binderror=\"${6:onError}\"",
+      "  bindplay=\"${7:onPlay}\"",
+      ">",
+      "  ${8:Content}",
+      "</audio>"
+    ],
+    "description": "Insert a concise Neux audio component template with common source-backed properties and events."
+  },
+  "Neux block component": {
+    "prefix": "nxBlock",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<block",
+      ">",
+      "  ${1:Content}",
+      "</block>"
+    ],
+    "description": "Insert a concise Neux block component template with common source-backed properties and events."
+  },
+  "Neux button component": {
+    "prefix": "nxButton",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<button",
+      "  type=\"${1|primary,default,warn|}\"",
+      "  size=\"${2|default,mini|}\"",
+      "  disabled=\"${3|true,false|}\"",
+      "  loading=\"${4|true,false|}\"",
+      "  openType=\"${5|contact,liveActivity,share,getPhoneNumber,getRealtimePhoneNumber,getUserInfo,launchApp,openSetting|}\"",
+      "  bindtap=\"${6:onTap}\"",
+      ">",
+      "  ${7:Content}",
+      "</button>"
+    ],
+    "description": "Insert a concise Neux button component template with common source-backed properties and events."
+  },
+  "Neux camera component": {
+    "prefix": "nxCamera",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<camera",
+      "  mode=\"${1|normal,scanCode|}\"",
+      "  devicePosition=\"${2|front,back|}\"",
+      "  flash=\"${3|auto,on,off,torch|}\"",
+      "  resolution=\"${4|low,medium,high|}\"",
+      "  binderror=\"${5:onError}\"",
+      ">",
+      "  ${6:Content}",
+      "</camera>"
+    ],
+    "description": "Insert a concise Neux camera component template with common source-backed properties and events."
+  },
+  "Neux canvas component": {
+    "prefix": "nxCanvas",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<canvas",
+      "  canvasId=\"${1:canvasId}\"",
+      "  type=\"${2:type}\"",
+      "  binderror=\"${3:onError}\"",
+      ">",
+      "  ${4:Content}",
+      "</canvas>"
+    ],
+    "description": "Insert a concise Neux canvas component template with common source-backed properties and events."
+  },
+  "Neux checkbox component": {
+    "prefix": "nxCheckbox",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<checkbox",
+      "  value=\"${1:value}\"",
+      "  checked=\"${2|true,false|}\"",
+      "  disabled=\"${3|true,false|}\"",
+      ">",
+      "  ${4:Content}",
+      "</checkbox>"
+    ],
+    "description": "Insert a concise Neux checkbox component template with common source-backed properties and events."
+  },
+  "Neux checkbox-group component": {
+    "prefix": "nxCheckboxGroup",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<checkbox-group",
+      "  id=\"${1:id}\"",
+      "  bindchange=\"${2:onChange}\"",
+      ">",
+      "  ${3:Content}",
+      "</checkbox-group>"
+    ],
+    "description": "Insert a concise Neux checkbox-group component template with common source-backed properties and events."
+  },
+  "Neux component-host component": {
+    "prefix": "nxComponentHost",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<component-host",
+      "  name=\"${1:name}\"",
+      ">",
+      "  ${2:Content}",
+      "</component-host>"
+    ],
+    "description": "Insert a concise Neux component-host component template with common source-backed properties and events."
+  },
+  "Neux cover-image component": {
+    "prefix": "nxCoverImage",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<cover-image",
+      "  src=\"{{${1:src}}}\"",
+      ">",
+      "  ${2:Content}",
+      "</cover-image>"
+    ],
+    "description": "Insert a concise Neux cover-image component template with common source-backed properties and events."
+  },
+  "Neux cover-view component": {
+    "prefix": "nxCoverView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<cover-view",
+      "  scrollTop=\"${1:0}\"",
+      "  scrollLeft=\"${2:0}\"",
+      "  markerId=\"${3:0}\"",
+      ">",
+      "  ${4:Content}",
+      "</cover-view>"
+    ],
+    "description": "Insert a concise Neux cover-view component template with common source-backed properties and events."
+  },
+  "Neux form component": {
+    "prefix": "nxForm",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<form",
+      "  reportSubmit=\"${1|true,false|}\"",
+      "  bindreset=\"${2:onReset}\"",
+      "  bindsubmit=\"${3:onSubmit}\"",
+      ">",
+      "  ${4:Content}",
+      "</form>"
+    ],
+    "description": "Insert a concise Neux form component template with common source-backed properties and events."
+  },
+  "Neux icon component": {
+    "prefix": "nxIcon",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<icon",
+      "  type=\"${1:type}\"",
+      "  size=\"${2:0}\"",
+      "  color=\"${3:color}\"",
+      ">",
+      "  ${4:Content}",
+      "</icon>"
+    ],
+    "description": "Insert a concise Neux icon component template with common source-backed properties and events."
+  },
+  "Neux image component": {
+    "prefix": "nxImage",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<image",
+      "  src=\"{{${1:src}}}\"",
+      "  mode=\"${2|scaleToFill,aspectFit,aspectFill,widthFix,heightFix,top,bottom,center|}\"",
+      "  lazyLoad=\"${3|true,false|}\"",
+      "  bindtap=\"${4:onTap}\"",
+      "  bindload=\"${5:onLoad}\"",
+      ">",
+      "  ${6:Content}",
+      "</image>"
+    ],
+    "description": "Insert a concise Neux image component template with common source-backed properties and events."
+  },
+  "Neux input component": {
+    "prefix": "nxInput",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<input",
+      "  value=\"${1:value}\"",
+      "  type=\"${2|text,number,idcard,digit,safe-password,nickname|}\"",
+      "  placeholder=\"${3:placeholder}\"",
+      "  disabled=\"${4|true,false|}\"",
+      "  maxlength=\"${5:0}\"",
+      "  bindinput=\"${6:onInput}\"",
+      "  bindchange=\"${7:onChange}\"",
+      ">",
+      "  ${8:Content}",
+      "</input>"
+    ],
+    "description": "Insert a concise Neux input component template with common source-backed properties and events."
+  },
+  "Neux keyboard-accessory component": {
+    "prefix": "nxKeyboardAccessory",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<keyboard-accessory",
+      "  maxHeight=\"${1:0}\"",
+      ">",
+      "  ${2:Content}",
+      "</keyboard-accessory>"
+    ],
+    "description": "Insert a concise Neux keyboard-accessory component template with common source-backed properties and events."
+  },
+  "Neux label component": {
+    "prefix": "nxLabel",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<label",
+      "  for=\"${1:for}\"",
+      ">",
+      "  ${2:Content}",
+      "</label>"
+    ],
+    "description": "Insert a concise Neux label component template with common source-backed properties and events."
+  },
+  "Neux map component": {
+    "prefix": "nxMap",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<map",
+      "  longitude=\"${1:0}\"",
+      "  latitude=\"${2:0}\"",
+      "  scale=\"${3:0}\"",
+      "  markers=\"${4:markers}\"",
+      "  bindtap=\"${5:onTap}\"",
+      "  binderror=\"${6:onError}\"",
+      ">",
+      "  ${7:Content}",
+      "</map>"
+    ],
+    "description": "Insert a concise Neux map component template with common source-backed properties and events."
+  },
+  "Neux movable-area component": {
+    "prefix": "nxMovableArea",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<movable-area",
+      "  scaleArea=\"${1|true,false|}\"",
+      "  bindtap=\"${2:onTap}\"",
+      ">",
+      "  ${3:Content}",
+      "</movable-area>"
+    ],
+    "description": "Insert a concise Neux movable-area component template with common source-backed properties and events."
+  },
+  "Neux movable-view component": {
+    "prefix": "nxMovableView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<movable-view",
+      "  disabled=\"${1|true,false|}\"",
+      "  bindchange=\"${2:onChange}\"",
+      ">",
+      "  ${3:Content}",
+      "</movable-view>"
+    ],
+    "description": "Insert a concise Neux movable-view component template with common source-backed properties and events."
+  },
+  "Neux navigation-bar component": {
+    "prefix": "nxNavigationBar",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<navigation-bar",
+      "  title=\"${1:title}\"",
+      "  loading=\"${2|true,false|}\"",
+      "  frontColor=\"${3|#ffffff,#000000|}\"",
+      ">",
+      "  ${4:Content}",
+      "</navigation-bar>"
+    ],
+    "description": "Insert a concise Neux navigation-bar component template with common source-backed properties and events."
+  },
+  "Neux navigator component": {
+    "prefix": "nxNavigator",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<navigator",
+      "  url=\"${1:/pages/index/index}\"",
+      "  openType=\"${2:openType}\"",
+      "  delta=\"${3:0}\"",
+      "  bindcomplete=\"${4:onComplete}\"",
+      "  bindfail=\"${5:onFail}\"",
+      ">",
+      "  ${6:Content}",
+      "</navigator>"
+    ],
+    "description": "Insert a concise Neux navigator component template with common source-backed properties and events."
+  },
+  "Neux open-data component": {
+    "prefix": "nxOpenData",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<open-data",
+      "  type=\"${1:type}\"",
+      "  openGid=\"${2:openGid}\"",
+      "  lang=\"${3:lang}\"",
+      "  binderror=\"${4:onError}\"",
+      ">",
+      "  ${5:Content}",
+      "</open-data>"
+    ],
+    "description": "Insert a concise Neux open-data component template with common source-backed properties and events."
+  },
+  "Neux page-container component": {
+    "prefix": "nxPageContainer",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<page-container",
+      "  show=\"${1|true,false|}\"",
+      "  duration=\"${2:0}\"",
+      "  zIndex=\"${3:0}\"",
+      "  bindafterenter=\"${4:onAfterenter}\"",
+      "  bindafterleave=\"${5:onAfterleave}\"",
+      ">",
+      "  ${6:Content}",
+      "</page-container>"
+    ],
+    "description": "Insert a concise Neux page-container component template with common source-backed properties and events."
+  },
+  "Neux page-meta component": {
+    "prefix": "nxPageMeta",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<page-meta",
+      "  diminaRpxUnit=\"${1:diminaRpxUnit}\"",
+      "  backgroundTextStyle=\"${2|dark,light|}\"",
+      "  backgroundColor=\"${3:backgroundColor}\"",
+      "  bindscroll=\"${4:onScroll}\"",
+      ">",
+      "  ${5:Content}",
+      "</page-meta>"
+    ],
+    "description": "Insert a concise Neux page-meta component template with common source-backed properties and events."
+  },
+  "Neux picker component": {
+    "prefix": "nxPicker",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<picker",
+      "  mode=\"${1|selector,multiSelector,time,date,region|}\"",
+      "  range=\"${2:range}\"",
+      "  rangeKey=\"${3:rangeKey}\"",
+      "  value=\"${4:0}\"",
+      "  disabled=\"${5|true,false|}\"",
+      "  bindchange=\"${6:onChange}\"",
+      "  binderror=\"${7:onError}\"",
+      ">",
+      "  ${8:Content}",
+      "</picker>"
+    ],
+    "description": "Insert a concise Neux picker component template with common source-backed properties and events."
+  },
+  "Neux picker-view component": {
+    "prefix": "nxPickerView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<picker-view",
+      "  value=\"${1:value}\"",
+      "  bindchange=\"${2:onChange}\"",
+      ">",
+      "  ${3:Content}",
+      "</picker-view>"
+    ],
+    "description": "Insert a concise Neux picker-view component template with common source-backed properties and events."
+  },
+  "Neux picker-view-column component": {
+    "prefix": "nxPickerViewColumn",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<picker-view-column",
+      ">",
+      "  ${1:Content}",
+      "</picker-view-column>"
+    ],
+    "description": "Insert a concise Neux picker-view-column component template with common source-backed properties and events."
+  },
+  "Neux progress component": {
+    "prefix": "nxProgress",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<progress",
+      "  percent=\"${1:0}\"",
+      "  showInfo=\"${2|true,false|}\"",
+      "  strokeWidth=\"${3:0}\"",
+      "  active=\"${4|true,false|}\"",
+      "  bindactiveend=\"${5:onActiveend}\"",
+      ">",
+      "  ${6:Content}",
+      "</progress>"
+    ],
+    "description": "Insert a concise Neux progress component template with common source-backed properties and events."
+  },
+  "Neux radio component": {
+    "prefix": "nxRadio",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<radio",
+      "  value=\"${1:value}\"",
+      "  checked=\"${2|true,false|}\"",
+      "  disabled=\"${3|true,false|}\"",
+      "  bindtap=\"${4:onTap}\"",
+      ">",
+      "  ${5:Content}",
+      "</radio>"
+    ],
+    "description": "Insert a concise Neux radio component template with common source-backed properties and events."
+  },
+  "Neux radio-group component": {
+    "prefix": "nxRadioGroup",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<radio-group",
+      "  id=\"${1:id}\"",
+      "  bindchange=\"${2:onChange}\"",
+      ">",
+      "  ${3:Content}",
+      "</radio-group>"
+    ],
+    "description": "Insert a concise Neux radio-group component template with common source-backed properties and events."
+  },
+  "Neux rich-text component": {
+    "prefix": "nxRichText",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<rich-text",
+      "  nodes=\"${1:nodes}\"",
+      "  space=\"${2|ensp,emsp,nbsp|}\"",
+      "  userSelect=\"${3|true,false|}\"",
+      ">",
+      "  ${4:Content}",
+      "</rich-text>"
+    ],
+    "description": "Insert a concise Neux rich-text component template with common source-backed properties and events."
+  },
+  "Neux root-portal component": {
+    "prefix": "nxRootPortal",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<root-portal",
+      "  enable=\"${1|true,false|}\"",
+      ">",
+      "  ${2:Content}",
+      "</root-portal>"
+    ],
+    "description": "Insert a concise Neux root-portal component template with common source-backed properties and events."
+  },
+  "Neux scroll-view component": {
+    "prefix": "nxScrollView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<scroll-view",
+      "  scrollY=\"${1|true,false|}\"",
+      "  scrollX=\"${2|true,false|}\"",
+      "  scrollTop=\"${3:0}\"",
+      "  scrollIntoView=\"${4:scrollIntoView}\"",
+      "  bindscroll=\"${5:onScroll}\"",
+      "  bindscrolltolower=\"${6:onScrolltolower}\"",
+      ">",
+      "  ${7:Content}",
+      "</scroll-view>"
+    ],
+    "description": "Insert a concise Neux scroll-view component template with common source-backed properties and events."
+  },
+  "Neux slider component": {
+    "prefix": "nxSlider",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<slider",
+      "  min=\"${1:0}\"",
+      "  max=\"${2:0}\"",
+      "  step=\"${3:0}\"",
+      "  value=\"${4:0}\"",
+      "  disabled=\"${5|true,false|}\"",
+      "  bindchange=\"${6:onChange}\"",
+      ">",
+      "  ${7:Content}",
+      "</slider>"
+    ],
+    "description": "Insert a concise Neux slider component template with common source-backed properties and events."
+  },
+  "Neux swiper component": {
+    "prefix": "nxSwiper",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<swiper",
+      "  indicatorDots=\"${1|true,false|}\"",
+      "  autoplay=\"${2|true,false|}\"",
+      "  current=\"${3:0}\"",
+      "  interval=\"${4:0}\"",
+      "  circular=\"${5|true,false|}\"",
+      "  bindchange=\"${6:onChange}\"",
+      ">",
+      "  ${7:Content}",
+      "</swiper>"
+    ],
+    "description": "Insert a concise Neux swiper component template with common source-backed properties and events."
+  },
+  "Neux swiper-item component": {
+    "prefix": "nxSwiperItem",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<swiper-item",
+      "  itemId=\"${1:itemId}\"",
+      ">",
+      "  ${2:Content}",
+      "</swiper-item>"
+    ],
+    "description": "Insert a concise Neux swiper-item component template with common source-backed properties and events."
+  },
+  "Neux switch component": {
+    "prefix": "nxSwitch",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<switch",
+      "  checked=\"${1|true,false|}\"",
+      "  disabled=\"${2|true,false|}\"",
+      "  type=\"${3|switch,checkbox|}\"",
+      "  bindchange=\"${4:onChange}\"",
+      ">",
+      "  ${5:Content}",
+      "</switch>"
+    ],
+    "description": "Insert a concise Neux switch component template with common source-backed properties and events."
+  },
+  "Neux template component": {
+    "prefix": "nxTemplate",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<template",
+      "  is=\"${1:is}\"",
+      "  data=\"${2:data}\"",
+      ">",
+      "  ${3:Content}",
+      "</template>"
+    ],
+    "description": "Insert a concise Neux template component template with common source-backed properties and events."
+  },
+  "Neux text component": {
+    "prefix": "nxText",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<text",
+      "  selectable=\"${1|true,false|}\"",
+      "  space=\"${2|ensp,emsp,nbsp|}\"",
+      "  bindtap=\"${3:onTap}\"",
+      ">",
+      "  ${4:Content}",
+      "</text>"
+    ],
+    "description": "Insert a concise Neux text component template with common source-backed properties and events."
+  },
+  "Neux textarea component": {
+    "prefix": "nxTextarea",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<textarea",
+      "  value=\"${1:value}\"",
+      "  placeholder=\"${2:placeholder}\"",
+      "  disabled=\"${3|true,false|}\"",
+      "  maxlength=\"${4:0}\"",
+      "  bindinput=\"${5:onInput}\"",
+      "  bindchange=\"${6:onChange}\"",
+      ">",
+      "  ${7:Content}",
+      "</textarea>"
+    ],
+    "description": "Insert a concise Neux textarea component template with common source-backed properties and events."
+  },
+  "Neux video component": {
+    "prefix": "nxVideo",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<video",
+      "  src=\"{{${1:src}}}\"",
+      "  controls=\"${2|true,false|}\"",
+      "  autoplay=\"${3|true,false|}\"",
+      "  poster=\"${4:poster}\"",
+      "  objectFit=\"${5:objectFit}\"",
+      "  binderror=\"${6:onError}\"",
+      "  bindplay=\"${7:onPlay}\"",
+      ">",
+      "  ${8:Content}",
+      "</video>"
+    ],
+    "description": "Insert a concise Neux video component template with common source-backed properties and events."
+  },
+  "Neux view component": {
+    "prefix": "nxView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<view",
+      "  hoverClass=\"${1:hoverClass}\"",
+      "  bindtap=\"${2:onTap}\"",
+      ">",
+      "  ${3:Content}",
+      "</view>"
+    ],
+    "description": "Insert a concise Neux view component template with common source-backed properties and events."
+  },
+  "Neux web-view component": {
+    "prefix": "nxWebView",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<web-view",
+      "  src=\"{{${1:src}}}\"",
+      "  bindload=\"${2:onLoad}\"",
+      "  binderror=\"${3:onError}\"",
+      ">",
+      "  ${4:Content}",
+      "</web-view>"
+    ],
+    "description": "Insert a concise Neux web-view component template with common source-backed properties and events."
+  }
+}

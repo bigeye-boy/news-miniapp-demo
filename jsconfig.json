@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "noEmit": true,
+    "target": "ES2020",
+    "types": [
+      "@neuxnet/neux-miniapp-types"
+    ],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "strict": false,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./types",
+      "./node_modules/@types"
+    ]
+  },
+  "include": [
+    "**/*.js",
+    "**/*.ts",
+    "types/**/*.d.ts",
+    "**/*.tsx",
+    "**/*.jsx",
+    "**/*.d.ts"
+  ],
+  "files": [
+    "ministudio-miniapp-env.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "miniprogram_npm",
+    "dist",
+    "build"
+  ]
+}

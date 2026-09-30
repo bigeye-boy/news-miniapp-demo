@@ -1,0 +1,89 @@
+/* Edit page layout. */
+.page {
+  box-sizing: border-box;
+  min-height: 100vh;
+  padding: 108rpx 32rpx 72rpx;
+}
+
+.avatar-area {
+  padding: 28rpx 24rpx;
+  border: 1rpx solid #dce5df;
+  border-radius: 18rpx;
+  background: #ffffff;
+  color: #64748b;
+  font-size: calc(26rpx * var(--host-font-scale, 1));
+  text-align: center;
+}
+
+/* Avatar preview. */
+.avatar {
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+  margin: 0 auto 16rpx;
+  border-radius: 50%;
+  background: #dcece1;
+}
+
+.placeholder {
+  color: #2d7950;
+  font-size: calc(64rpx * var(--host-font-scale, 1));
+  line-height: 160rpx;
+}
+
+/* Profile form fields. */
+.form {
+  margin-top: 28rpx;
+  padding: 20rpx 24rpx 24rpx;
+  border: 1rpx solid #dce5df;
+  border-radius: 18rpx;
+  background: #ffffff;
+}
+
+.field-input,
+.field-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 12rpx 0;
+  padding: 0 4rpx 10rpx;
+  border: 0;
+  border-bottom: 1rpx solid #cbd5e1;
+  border-radius: 0;
+  background: transparent;
+  color: #1f2937;
+  font-size: calc(30rpx * var(--host-font-scale, 1));
+}
+
+.field-input {
+  height: 84rpx;
+  line-height: 84rpx;
+}
+
+.field-textarea {
+  min-height: 120rpx;
+  padding-top: 18rpx;
+}
+
+/* Save action. */
+button {
+  margin-top: 28rpx;
+}
+
+.request-error {
+  display: block;
+  margin-top: 16rpx;
+  color: #c2410c;
+  font-size: calc(24rpx * var(--host-font-scale, 1));
+}
+
+.page.theme-dark .avatar-area,
+.page.theme-dark .form {
+  border-color: #33453b;
+  background: #18231f;
+}
+
+.page.theme-dark .field-input,
+.page.theme-dark .field-textarea {
+  color: #f4f7f5;
+  border-color: #51645a;
+}

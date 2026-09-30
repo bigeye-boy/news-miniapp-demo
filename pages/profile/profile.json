@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "demo-badge": "/miniprogram_npm/npm-components/badge/index",
+    "demo-card": "/miniprogram_npm/npm-components/card/index",
+    "demo-stepper": "/miniprogram_npm/npm-components/stepper/index",
+    "van-switch": "/miniprogram_npm/@vant/weapp/switch/index",
+    "app-drawer": "/components/drawer/drawer"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://neuxnet.com/schemas/neux/page.schema.json",
+  "title": "Neux page configuration",
+  "description": "Page-level configuration consumed by the Neux mini program compiler.",
+  "type": "object",
+  "properties": {
+    "navigationBarTitleText": { "type": "string" },
+    "navigationBarBackgroundColor": { "type": "string" },
+    "navigationBarTextStyle": { "type": "string", "enum": ["black", "white"] },
+    "backgroundColor": { "type": "string" },
+    "backgroundTextStyle": { "type": "string", "enum": ["dark", "light"] },
+    "enablePullDownRefresh": { "type": "boolean" },
+    "onReachBottomDistance": { "type": "number", "minimum": 0 },
+    "usingComponents": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+    "disableScroll": { "type": "boolean" },
+    "pageOrientation": { "type": "string" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,161 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://neuxnet.com/schemas/neux/project-private-config.schema.json",
+  "title": "Neux private project configuration",
+  "description": "Optional local overrides for project.config.json. All fields are optional.",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string"
+    },
+    "appid": {
+      "type": "string"
+    },
+    "appId": {
+      "type": "string"
+    },
+    "projectname": {
+      "type": "string"
+    },
+    "projectName": {
+      "type": "string"
+    },
+    "compileType": {
+      "type": "string",
+      "enum": [
+        "miniprogram"
+      ]
+    },
+    "libVersion": {
+      "type": "string"
+    },
+    "miniprogramRoot": {
+      "type": "string"
+    },
+    "versionName": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "versionCode": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "setting": {
+      "$ref": "#/definitions/setting"
+    },
+    "condition": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "packOptions": {
+      "$ref": "#/definitions/packOptions"
+    },
+    "editorSetting": {
+      "$ref": "#/definitions/editorSetting"
+    },
+    "neux": {
+      "$ref": "#/definitions/neux"
+    },
+    "neuxCli": {
+      "$ref": "#/definitions/neux"
+    }
+  },
+  "additionalProperties": true,
+  "definitions": {
+    "setting": {
+      "type": "object",
+      "properties": {
+        "urlCheck": {
+          "type": "boolean"
+        },
+        "es6": {
+          "type": "boolean"
+        },
+        "postcss": {
+          "type": "boolean"
+        },
+        "minified": {
+          "type": "boolean"
+        },
+        "newFeature": {
+          "type": "boolean"
+        },
+        "babelSetting": {
+          "type": "object",
+          "properties": {
+            "ignore": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "disablePlugins": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "outputPath": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "packOptions": {
+      "type": "object",
+      "properties": {
+        "ignore": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "include": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "editorSetting": {
+      "type": "object",
+      "properties": {
+        "tabIndent": {
+          "type": "string",
+          "enum": [
+            "insertSpaces",
+            "indexSize"
+          ]
+        },
+        "tabSize": {
+          "type": "integer",
+          "minimum": 1
+        }
+      },
+      "additionalProperties": true
+    },
+    "neux": {
+      "type": "object",
+      "properties": {
+        "serverUrl": {
+          "type": "string",
+          "format": "uri"
+        },
+        "appId": {
+          "type": "string"
+        },
+        "profile": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

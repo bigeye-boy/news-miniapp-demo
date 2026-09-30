@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://neuxnet.com/schemas/neux/app.schema.json",
+  "title": "Neux app configuration",
+  "description": "Application-level configuration consumed by the Neux mini program compiler.",
+  "type": "object",
+  "properties": {
+    "pages": { "type": "array", "description": "Page entry paths, relative to miniprogramRoot.", "items": { "type": "string", "minLength": 1 } },
+    "entryPagePath": { "type": "string", "description": "Optional initial page path." },
+    "window": { "$ref": "#/definitions/window" },
+    "tabBar": { "$ref": "#/definitions/tabBar" },
+    "subPackages": { "$ref": "#/definitions/subPackages" },
+    "subpackages": { "$ref": "#/definitions/subPackages" },
+    "preloadRule": { "type": "object", "description": "Page preload configuration.", "additionalProperties": { "type": "object" } },
+    "networkTimeout": { "type": "object", "properties": { "request": { "type": "number", "minimum": 0 }, "connectSocket": { "type": "number", "minimum": 0 }, "uploadFile": { "type": "number", "minimum": 0 }, "downloadFile": { "type": "number", "minimum": 0 } }, "additionalProperties": true },
+    "permission": { "type": "object", "description": "Permission declarations used by the host runtime.", "additionalProperties": true },
+    "usingComponents": { "$ref": "#/definitions/usingComponents" },
+    "style": { "type": "string" },
+    "sitemapLocation": { "type": "string" }
+  },
+  "additionalProperties": true,
+  "definitions": {
+    "window": {
+      "type": "object",
+      "properties": {
+        "navigationBarTitleText": { "type": "string" },
+        "navigationBarBackgroundColor": { "type": "string", "pattern": "^#?[0-9a-fA-F]{3,8}$" },
+        "navigationBarTextStyle": { "type": "string", "enum": ["black", "white"] },
+        "backgroundColor": { "type": "string", "pattern": "^#?[0-9a-fA-F]{3,8}$" },
+        "backgroundTextStyle": { "type": "string", "enum": ["dark", "light"] },
+        "enablePullDownRefresh": { "type": "boolean" },
+        "onReachBottomDistance": { "type": "number", "minimum": 0 },
+        "pageOrientation": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "tabBar": {
+      "type": "object",
+      "properties": {
+        "color": { "type": "string" },
+        "selectedColor": { "type": "string" },
+        "backgroundColor": { "type": "string" },
+        "borderStyle": { "type": "string", "enum": ["black", "white"] },
+        "position": { "type": "string", "enum": ["bottom", "top"] },
+        "custom": { "type": "boolean" },
+        "list": { "type": "array", "minItems": 1, "maxItems": 5, "items": { "$ref": "#/definitions/tabBarItem" } }
+      },
+      "required": ["list"],
+      "additionalProperties": true
+    },
+    "tabBarItem": {
+      "type": "object",
+      "properties": { "pagePath": { "type": "string" }, "text": { "type": "string" }, "iconPath": { "type": "string" }, "selectedIconPath": { "type": "string" } },
+      "required": ["pagePath", "text"],
+      "additionalProperties": true
+    },
+    "subPackages": {
+      "type": "array",
+      "items": { "type": "object", "properties": { "root": { "type": "string" }, "pages": { "type": "array", "items": { "type": "string" } }, "independent": { "type": "boolean" } }, "required": ["root", "pages"], "additionalProperties": true }
+    },
+    "usingComponents": { "type": "object", "description": "Maps component names to component files or package names.", "additionalProperties": { "type": "string", "minLength": 1 } }
+  }
+}

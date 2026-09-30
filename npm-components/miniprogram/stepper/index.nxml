@@ -1,0 +1,5 @@
+<view class="stepper {{theme}}">
+  <button class="button" size="mini" bindtap="decrease">−</button>
+  <text class="value">{{value}}</text>
+  <button class="button" size="mini" bindtap="increase">+</button>
+</view>

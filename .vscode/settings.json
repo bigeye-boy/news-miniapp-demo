@@ -1,0 +1,42 @@
+{
+  "files.associations": {
+    "*.nxml": "html",
+    "*.nxss": "css"
+  },
+  "json.schemas": [
+    {
+      "fileMatch": [
+        "/app.json"
+      ],
+      "url": "./.vscode/neux-json-schemas/app.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/pages/**/*.json",
+        "/components/**/*.json"
+      ],
+      "url": "./.vscode/neux-json-schemas/page.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/project.config.json"
+      ],
+      "url": "./.vscode/neux-json-schemas/project-config.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/project.private.config.json"
+      ],
+      "url": "./.vscode/neux-json-schemas/project-private-config.schema.json"
+    },
+    {
+      "fileMatch": [
+        "/neux.config.json"
+      ],
+      "url": "./.vscode/neux-json-schemas/neux-config.schema.json"
+    }
+  ],
+  "html.customData": [
+    "./.vscode/neux-html-data.json"
+  ]
+}

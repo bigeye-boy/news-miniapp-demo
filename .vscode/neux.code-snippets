@@ -1,0 +1,281 @@
+{
+  "Neux Page": {
+    "prefix": "nxpage",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "Page({",
+      "  data: {",
+      "    ${1:key}: ${2:value},",
+      "  },",
+      "  onLoad(options) {",
+      "    ${0}",
+      "  },",
+      "})"
+    ],
+    "description": "Create a Neux page definition"
+  },
+  "Neux Component": {
+    "prefix": "nxcomponent",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "Component({",
+      "  properties: {",
+      "    ${1:value}: {",
+      "      type: ${2:String},",
+      "      value: ${3:undefined},",
+      "    },",
+      "  },",
+      "  data: {},",
+      "  methods: {",
+      "    ${0}",
+      "  },",
+      "})"
+    ],
+    "description": "Create a Neux component definition"
+  },
+  "setData Update": {
+    "prefix": "nxset",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "this.setData({",
+      "  ${1:key}: ${2:value},",
+      "})$0"
+    ],
+    "description": "Update rendered data with setData"
+  },
+  "Event Handler": {
+    "prefix": "nxevent",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "${1:handleTap}(event) {",
+      "  ${0}",
+      "}"
+    ],
+    "description": "Create a page or component event handler"
+  },
+  "Network Request": {
+    "prefix": "nxrequest",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "wx.request({",
+      "  url: '${1:https://example.com/api}',",
+      "  method: ${2:'GET'},",
+      "  data: ${3:{}},",
+      "  success(result) {",
+      "    ${4}",
+      "  },",
+      "  fail(error) {",
+      "    ${0}",
+      "  },",
+      "})"
+    ],
+    "description": "Create a wx.request call"
+  },
+  "Toast": {
+    "prefix": "nxtoast",
+    "scope": "javascript,typescript",
+    "include": [
+      "**/*.js",
+      "**/*.ts"
+    ],
+    "body": [
+      "nx.showToast({",
+      "  title: '${1:Done}',",
+      "  icon: ${2:'success'},",
+      "})$0"
+    ],
+    "description": "Show a Neux toast"
+  },
+  "List Rendering": {
+    "prefix": "nxfor",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<view nx:for=\"{{${1:items}}}\" nx:key=\"${2:id}\">",
+      "  <text>{{${3:item}.${4:name}}}</text>",
+      "</view>$0"
+    ],
+    "description": "Render a list with nx:for and nx:key"
+  },
+  "Conditional Rendering": {
+    "prefix": "nxif",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<view nx:if=\"{{${1:visible}}}\">",
+      "  ${0}",
+      "</view>"
+    ],
+    "description": "Render a view conditionally"
+  },
+  "Page View": {
+    "prefix": "nxview",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<view class=\"${1:page}\">",
+      "  ${0}",
+      "</view>"
+    ],
+    "description": "Insert a page view container"
+  },
+  "NXML Image": {
+    "prefix": "nximage",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<image src=\"{{${1:imageUrl}}}\" mode=\"${2:aspectFit}\" />$0"
+    ],
+    "description": "Insert an image with a bound source"
+  },
+  "NXML Text": {
+    "prefix": "nxtext",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<text class=\"${1:text}\">{{${2:value}}}</text>$0"
+    ],
+    "description": "Insert a text binding"
+  },
+  "NXML Input": {
+    "prefix": "nxinput",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<input value=\"{{${1:value}}}\" placeholder=\"${2:Enter text}\" bindinput=\"${3:onInput}\" />$0"
+    ],
+    "description": "Insert a data-bound input"
+  },
+  "NXML Include": {
+    "prefix": "nxinclude",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<include src=\"${1:components/header/header.nxml}\" />$0"
+    ],
+    "description": "Include another NXML template"
+  },
+  "NXML Template": {
+    "prefix": "nxtemplate",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<template name=\"${1:card}\">",
+      "  ${0}",
+      "</template>"
+    ],
+    "description": "Define a reusable NXML template"
+  },
+  "NXML Template Use": {
+    "prefix": "nxtemplateuse",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<template is=\"${1:card}\" data=\"{{${2:item}}}\" />$0"
+    ],
+    "description": "Use a reusable NXML template"
+  },
+  "NXML Scroll View": {
+    "prefix": "nxscroll",
+    "scope": "html",
+    "include": [
+      "**/*.nxml"
+    ],
+    "body": [
+      "<scroll-view scroll-y class=\"${1:scroll-view}\">",
+      "  ${0}",
+      "</scroll-view>"
+    ],
+    "description": "Insert a vertical scroll view"
+  },
+  "Style Rule": {
+    "prefix": "nxstyle",
+    "scope": "css",
+    "include": [
+      "**/*.nxss"
+    ],
+    "body": [
+      ".${1:class-name} {",
+      "  ${2:display}: ${3:block};",
+      "}$0"
+    ],
+    "description": "Insert an nxss style rule"
+  },
+  "Flex Layout": {
+    "prefix": "nxflex",
+    "scope": "css",
+    "include": [
+      "**/*.nxss"
+    ],
+    "body": [
+      "display: flex;",
+      "align-items: ${1:center};",
+      "justify-content: ${2:center};$0"
+    ],
+    "description": "Insert common flex layout properties"
+  },
+  "Grid Layout": {
+    "prefix": "nxgrid",
+    "scope": "css",
+    "include": [
+      "**/*.nxss"
+    ],
+    "body": [
+      "display: grid;",
+      "grid-template-columns: repeat(${1:2}, 1fr);",
+      "gap: ${2:16rpx};$0"
+    ],
+    "description": "Insert a common grid layout"
+  },
+  "Text Ellipsis": {
+    "prefix": "nxellipsis",
+    "scope": "css",
+    "include": [
+      "**/*.nxss"
+    ],
+    "body": [
+      "overflow: hidden;",
+      "text-overflow: ellipsis;",
+      "white-space: nowrap;$0"
+    ],
+    "description": "Insert single-line text ellipsis styles"
+  }
+}

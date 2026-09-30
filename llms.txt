@@ -1,0 +1,39 @@
+# Mini App AI Development Context
+
+> General development context for Neux mini apps. This file does not describe a specific application, App ID, business domain, or page implementation.
+
+## Official AI Documentation
+
+- AI guide: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/en/ai
+- LLM index: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/llms.txt
+- Full LLM export: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/llms-full.txt
+- MCP endpoint: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/mcp
+- Agent Skill index: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/.well-known/skills/index.json
+- Neux documentation Skill: https://demo-c.paas.superapp.neuvision.cn/miniappdoc/.well-known/skills/neux-docs/SKILL.md
+
+These published resources are the source of truth for framework, API, component, SDK, and CLI questions.
+
+## Development Guidelines
+
+- Use `nxml` for view templates and `nxss` for stylesheets.
+- Use page or component JavaScript for behavior and state.
+- Use `this.setData({ ... })` when changing data rendered by the view.
+- Use `nx:for` with `nx:key` for list rendering when supported by the project compiler.
+- Keep configuration, source code, assets, and generated output separate.
+- Do not edit the generated `dist` directory by hand.
+- Inspect the existing project configuration before changing routes, components, or runtime settings.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+Use the project files as a starting point and organize pages, components, and application logic according to the actual project requirements.

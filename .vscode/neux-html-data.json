@@ -1,0 +1,3345 @@
+{
+  "version": 1.1,
+  "tags": [
+    {
+      "name": "audio",
+      "description": "Neux built-in component: audio.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "src",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "author",
+          "description": "Type: string."
+        },
+        {
+          "name": "poster",
+          "description": "Type: string."
+        },
+        {
+          "name": "controls",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoplay",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "loop",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "muted",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "initialTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "action",
+          "description": "Type: Record<string, unknown>."
+        },
+        {
+          "name": "bindended",
+          "description": "Handle the ended event."
+        },
+        {
+          "name": "catchended",
+          "description": "Handle and stop propagation of the ended event."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindloadedmetadata",
+          "description": "Handle the loadedmetadata event."
+        },
+        {
+          "name": "catchloadedmetadata",
+          "description": "Handle and stop propagation of the loadedmetadata event."
+        },
+        {
+          "name": "bindpause",
+          "description": "Handle the pause event."
+        },
+        {
+          "name": "catchpause",
+          "description": "Handle and stop propagation of the pause event."
+        },
+        {
+          "name": "bindplay",
+          "description": "Handle the play event."
+        },
+        {
+          "name": "catchplay",
+          "description": "Handle and stop propagation of the play event."
+        },
+        {
+          "name": "bindtimeupdate",
+          "description": "Handle the timeupdate event."
+        },
+        {
+          "name": "catchtimeupdate",
+          "description": "Handle and stop propagation of the timeupdate event."
+        },
+        {
+          "name": "bindwaiting",
+          "description": "Handle the waiting event."
+        },
+        {
+          "name": "catchwaiting",
+          "description": "Handle and stop propagation of the waiting event."
+        }
+      ]
+    },
+    {
+      "name": "block",
+      "description": "Neux built-in component: block.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        }
+      ]
+    },
+    {
+      "name": "button",
+      "description": "Neux built-in component: button.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "size",
+          "description": "Type: \"default\" | \"mini\"."
+        },
+        {
+          "name": "type",
+          "description": "Type: \"primary\" | \"default\" | \"warn\"."
+        },
+        {
+          "name": "plain",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "loading",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "formType",
+          "description": "Type: \"submit\" | \"reset\"."
+        },
+        {
+          "name": "openType",
+          "description": "Type: \"contact\" | \"liveActivity\" | \"share\" | \"getPhoneNumber\" | \"getRealtimePhoneNumber\" | \"getUserInfo\" | \"launchApp\" | \"openSetting\" | \"feedback\" | \"chooseAvatar\" | \"agreePrivacyAuthorization\"."
+        },
+        {
+          "name": "appParameter",
+          "description": "Type: string."
+        },
+        {
+          "name": "launchAppid",
+          "description": "Type: string."
+        },
+        {
+          "name": "withCredentials",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "lang",
+          "description": "Type: string."
+        },
+        {
+          "name": "sessionFrom",
+          "description": "Type: string."
+        },
+        {
+          "name": "businessId",
+          "description": "Type: string."
+        },
+        {
+          "name": "sendMessageTitle",
+          "description": "Type: string."
+        },
+        {
+          "name": "sendMessagePath",
+          "description": "Type: string."
+        },
+        {
+          "name": "sendMessageImg",
+          "description": "Type: string."
+        },
+        {
+          "name": "showMessageCard",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "categoryId",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "needPhoneNumber",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "native",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "phoneNumber",
+          "description": "Type: string."
+        },
+        {
+          "name": "smsType",
+          "description": "Type: number."
+        },
+        {
+          "name": "hoverClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "hover",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStopPropagation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStartTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "hoverStayTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "camera",
+      "description": "Neux built-in component: camera.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "mode",
+          "description": "Type: \"normal\" | \"scanCode\"."
+        },
+        {
+          "name": "devicePosition",
+          "description": "Type: \"front\" | \"back\"."
+        },
+        {
+          "name": "filter",
+          "description": "Type: number."
+        },
+        {
+          "name": "flash",
+          "description": "Type: \"auto\" | \"on\" | \"off\" | \"torch\"."
+        },
+        {
+          "name": "scanArea",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "needOutput",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "frameSize",
+          "description": "Type: \"\" | \"small\" | \"medium\" | \"large\"."
+        },
+        {
+          "name": "centerCrop",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "resolution",
+          "description": "Type: \"low\" | \"medium\" | \"high\"."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindinitdone",
+          "description": "Handle the initdone event."
+        },
+        {
+          "name": "catchinitdone",
+          "description": "Handle and stop propagation of the initdone event."
+        },
+        {
+          "name": "bindoutput",
+          "description": "Handle the output event."
+        },
+        {
+          "name": "catchoutput",
+          "description": "Handle and stop propagation of the output event."
+        },
+        {
+          "name": "bindscancode",
+          "description": "Handle the scancode event."
+        },
+        {
+          "name": "catchscancode",
+          "description": "Handle and stop propagation of the scancode event."
+        },
+        {
+          "name": "bindstop",
+          "description": "Handle the stop event."
+        },
+        {
+          "name": "catchstop",
+          "description": "Handle and stop propagation of the stop event."
+        }
+      ]
+    },
+    {
+      "name": "canvas",
+      "description": "Neux built-in component: canvas.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "canvasId",
+          "description": "Type: string."
+        },
+        {
+          "name": "disableScroll",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "type",
+          "description": "Type: string."
+        },
+        {
+          "name": "newTouchListener",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "renderWidth",
+          "description": "Type: number."
+        },
+        {
+          "name": "renderHeight",
+          "description": "Type: number."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        }
+      ]
+    },
+    {
+      "name": "checkbox",
+      "description": "Neux built-in component: checkbox.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "value",
+          "description": "Type: string."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "checked",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "checkbox-group",
+      "description": "Neux built-in component: checkbox-group.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        }
+      ]
+    },
+    {
+      "name": "component-host",
+      "description": "Neux built-in component: component-host.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "cover-image",
+      "description": "Neux built-in component: cover-image.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "src",
+          "description": "Type: string."
+        },
+        {
+          "name": "referrerPolicy",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "cover-view",
+      "description": "Neux built-in component: cover-view.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "scrollTop",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "scrollLeft",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "markerId",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "hoverClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "hover",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStopPropagation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStartTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "hoverStayTime",
+          "description": "Type: number."
+        }
+      ]
+    },
+    {
+      "name": "form",
+      "description": "Neux built-in component: form.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "reportSubmit",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "reportSubmitTimeout",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindreset",
+          "description": "Handle the reset event."
+        },
+        {
+          "name": "catchreset",
+          "description": "Handle and stop propagation of the reset event."
+        },
+        {
+          "name": "bindsubmit",
+          "description": "Handle the submit event."
+        },
+        {
+          "name": "catchsubmit",
+          "description": "Handle and stop propagation of the submit event."
+        }
+      ]
+    },
+    {
+      "name": "icon",
+      "description": "Neux built-in component: icon.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "type",
+          "description": "Type: string."
+        },
+        {
+          "name": "size",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "image",
+      "description": "Neux built-in component: image.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "src",
+          "description": "Type: string."
+        },
+        {
+          "name": "lazyLoad",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "lazyLoadMargin",
+          "description": "Type: number."
+        },
+        {
+          "name": "webp",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "backgroundSize",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundPosition",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundRepeat",
+          "description": "Type: string."
+        },
+        {
+          "name": "renderingMode",
+          "description": "Type: \"backgroundImage\" | \"img\"."
+        },
+        {
+          "name": "showMenuByLongpress",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "referrerPolicy",
+          "description": "Type: string."
+        },
+        {
+          "name": "mode",
+          "description": "Type: \"scaleToFill\" | \"aspectFit\" | \"aspectFill\" | \"widthFix\" | \"heightFix\" | \"top\" | \"bottom\" | \"center\" | \"left\" | \"right\" | \"top left\" | \"top right\" | \"bottom left\" | \"bottom right\"."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindload",
+          "description": "Handle the load event."
+        },
+        {
+          "name": "catchload",
+          "description": "Handle and stop propagation of the load event."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "input",
+      "description": "Neux built-in component: input.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "value",
+          "description": "Type: string."
+        },
+        {
+          "name": "type",
+          "description": "Type: \"text\" | \"number\" | \"idcard\" | \"digit\" | \"safe-password\" | \"nickname\"."
+        },
+        {
+          "name": "password",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "placeholder",
+          "description": "Type: string."
+        },
+        {
+          "name": "placeholderStyle",
+          "description": "Type: string | Record<string, unknown>."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "maxlength",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "cursorSpacing",
+          "description": "Type: number."
+        },
+        {
+          "name": "autoFocus",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "focus",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "confirmType",
+          "description": "Type: \"send\" | \"search\" | \"next\" | \"go\" | \"done\"."
+        },
+        {
+          "name": "alwaysEmbed",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "confirmHold",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "cursor",
+          "description": "Type: number."
+        },
+        {
+          "name": "cursorColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "selectionStart",
+          "description": "Type: number."
+        },
+        {
+          "name": "selectionEnd",
+          "description": "Type: number."
+        },
+        {
+          "name": "adjustPosition",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "holdKeyboard",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "placeholderClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "keyboardAppearance",
+          "description": "Type: string."
+        },
+        {
+          "name": "dropdownStyle",
+          "description": "Type: Record<string, unknown>."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "safePasswordCertPath",
+          "description": "Type: string."
+        },
+        {
+          "name": "safePasswordTimeStamp",
+          "description": "Type: number."
+        },
+        {
+          "name": "safePasswordNonce",
+          "description": "Type: number."
+        },
+        {
+          "name": "safePasswordSalt",
+          "description": "Type: string."
+        },
+        {
+          "name": "safePasswordCustomHash",
+          "description": "Type: string."
+        },
+        {
+          "name": "safePasswordLength",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindblur",
+          "description": "Handle the blur event."
+        },
+        {
+          "name": "catchblur",
+          "description": "Handle and stop propagation of the blur event."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindconfirm",
+          "description": "Handle the confirm event."
+        },
+        {
+          "name": "catchconfirm",
+          "description": "Handle and stop propagation of the confirm event."
+        },
+        {
+          "name": "bindfocus",
+          "description": "Handle the focus event."
+        },
+        {
+          "name": "catchfocus",
+          "description": "Handle and stop propagation of the focus event."
+        },
+        {
+          "name": "bindinput",
+          "description": "Handle the input event."
+        },
+        {
+          "name": "catchinput",
+          "description": "Handle and stop propagation of the input event."
+        }
+      ]
+    },
+    {
+      "name": "keyboard-accessory",
+      "description": "Neux built-in component: keyboard-accessory.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "maxHeight",
+          "description": "Type: number."
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "description": "Neux built-in component: label.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "for",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "map",
+      "description": "Neux built-in component: map.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "latitude",
+          "description": "Type: number."
+        },
+        {
+          "name": "longitude",
+          "description": "Type: number."
+        },
+        {
+          "name": "scale",
+          "description": "Type: number."
+        },
+        {
+          "name": "markers",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "covers",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "includePoints",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "polyline",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "circles",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "controls",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "polygons",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "showLocation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showScale",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showCompass",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "theme",
+          "description": "Type: string."
+        },
+        {
+          "name": "subkey",
+          "description": "Type: string."
+        },
+        {
+          "name": "layerStyle",
+          "description": "Type: number."
+        },
+        {
+          "name": "usePluginId",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableZoom",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableScroll",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableRotate",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enable3D",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableOverlooking",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableAutoMaxOverlooking",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableSatellite",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableTraffic",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enablePoi",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enablePOI",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableBuilding",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableIndoor",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableIndoorBuildingPick",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableIndoorLevelPick",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "rotate",
+          "description": "Type: number."
+        },
+        {
+          "name": "skew",
+          "description": "Type: number."
+        },
+        {
+          "name": "minScale",
+          "description": "Type: number."
+        },
+        {
+          "name": "maxScale",
+          "description": "Type: number."
+        },
+        {
+          "name": "setting",
+          "description": "Type: Record<string, unknown>."
+        },
+        {
+          "name": "bindcallouttap",
+          "description": "Handle the callouttap event."
+        },
+        {
+          "name": "catchcallouttap",
+          "description": "Handle and stop propagation of the callouttap event."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindmarkertap",
+          "description": "Handle the markertap event."
+        },
+        {
+          "name": "catchmarkertap",
+          "description": "Handle and stop propagation of the markertap event."
+        },
+        {
+          "name": "bindregionchange",
+          "description": "Handle the regionchange event."
+        },
+        {
+          "name": "catchregionchange",
+          "description": "Handle and stop propagation of the regionchange event."
+        },
+        {
+          "name": "bindrendersuccess",
+          "description": "Handle the rendersuccess event."
+        },
+        {
+          "name": "catchrendersuccess",
+          "description": "Handle and stop propagation of the rendersuccess event."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        },
+        {
+          "name": "bindupdated",
+          "description": "Handle the updated event."
+        },
+        {
+          "name": "catchupdated",
+          "description": "Handle and stop propagation of the updated event."
+        }
+      ]
+    },
+    {
+      "name": "movable-area",
+      "description": "Neux built-in component: movable-area.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "scaleArea",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "movable-view",
+      "description": "Neux built-in component: movable-view.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "direction",
+          "description": "Type: \"all\" | \"vertical\" | \"horizontal\" | \"none\"."
+        },
+        {
+          "name": "inertia",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "outOfBounds",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "x",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "y",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "damping",
+          "description": "Type: number."
+        },
+        {
+          "name": "friction",
+          "description": "Type: number."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "scale",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "scaleMin",
+          "description": "Type: number."
+        },
+        {
+          "name": "scaleMax",
+          "description": "Type: number."
+        },
+        {
+          "name": "scaleValue",
+          "description": "Type: number."
+        },
+        {
+          "name": "animation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindscale",
+          "description": "Handle the scale event."
+        },
+        {
+          "name": "catchscale",
+          "description": "Handle and stop propagation of the scale event."
+        },
+        {
+          "name": "bindtouchend",
+          "description": "Handle the touchend event."
+        },
+        {
+          "name": "catchtouchend",
+          "description": "Handle and stop propagation of the touchend event."
+        },
+        {
+          "name": "bindtouchmove",
+          "description": "Handle the touchmove event."
+        },
+        {
+          "name": "catchtouchmove",
+          "description": "Handle and stop propagation of the touchmove event."
+        },
+        {
+          "name": "bindtouchstart",
+          "description": "Handle the touchstart event."
+        },
+        {
+          "name": "catchtouchstart",
+          "description": "Handle and stop propagation of the touchstart event."
+        }
+      ]
+    },
+    {
+      "name": "navigation-bar",
+      "description": "Neux built-in component: navigation-bar.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "title",
+          "description": "Type: string."
+        },
+        {
+          "name": "loading",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "frontColor",
+          "description": "Type: \"#ffffff\" | \"#000000\"."
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "colorAnimationDuration",
+          "description": "Type: number."
+        },
+        {
+          "name": "colorAnimationTimingFunc",
+          "description": "Type: \"linear\" | \"easeIn\" | \"easeOut\" | \"easeInOut\"."
+        }
+      ]
+    },
+    {
+      "name": "navigator",
+      "description": "Neux built-in component: navigator.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "target",
+          "description": "Type: string."
+        },
+        {
+          "name": "url",
+          "description": "Type: string."
+        },
+        {
+          "name": "redirect",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "openType",
+          "description": "Type: string."
+        },
+        {
+          "name": "delta",
+          "description": "Type: number."
+        },
+        {
+          "name": "appId",
+          "description": "Type: string."
+        },
+        {
+          "name": "path",
+          "description": "Type: string."
+        },
+        {
+          "name": "extraData",
+          "description": "Type: Record<string, unknown>."
+        },
+        {
+          "name": "version",
+          "description": "Type: string."
+        },
+        {
+          "name": "shortLink",
+          "description": "Type: string."
+        },
+        {
+          "name": "scene",
+          "description": "Type: number."
+        },
+        {
+          "name": "sceneNote",
+          "description": "Type: string."
+        },
+        {
+          "name": "hoverClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "hover",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStopPropagation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStartTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "hoverStayTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindcomplete",
+          "description": "Handle the complete event."
+        },
+        {
+          "name": "catchcomplete",
+          "description": "Handle and stop propagation of the complete event."
+        },
+        {
+          "name": "bindfail",
+          "description": "Handle the fail event."
+        },
+        {
+          "name": "catchfail",
+          "description": "Handle and stop propagation of the fail event."
+        },
+        {
+          "name": "bindsuccess",
+          "description": "Handle the success event."
+        },
+        {
+          "name": "catchsuccess",
+          "description": "Handle and stop propagation of the success event."
+        }
+      ]
+    },
+    {
+      "name": "open-data",
+      "description": "Neux built-in component: open-data.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "type",
+          "description": "Type: string."
+        },
+        {
+          "name": "openGid",
+          "description": "Type: string."
+        },
+        {
+          "name": "lang",
+          "description": "Type: string."
+        },
+        {
+          "name": "defaultText",
+          "description": "Type: string."
+        },
+        {
+          "name": "defaultAvatar",
+          "description": "Type: string."
+        },
+        {
+          "name": "keyList",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindgetgroupname",
+          "description": "Handle the getgroupname event."
+        },
+        {
+          "name": "catchgetgroupname",
+          "description": "Handle and stop propagation of the getgroupname event."
+        }
+      ]
+    },
+    {
+      "name": "page-container",
+      "description": "Neux built-in component: page-container.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "show",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "duration",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "zIndex",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "overlay",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "position",
+          "description": "Type: string."
+        },
+        {
+          "name": "round",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "closeOnSlideDown",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "overlayStyle",
+          "description": "Type: string."
+        },
+        {
+          "name": "customStyle",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindafterenter",
+          "description": "Handle the afterenter event."
+        },
+        {
+          "name": "catchafterenter",
+          "description": "Handle and stop propagation of the afterenter event."
+        },
+        {
+          "name": "bindafterleave",
+          "description": "Handle the afterleave event."
+        },
+        {
+          "name": "catchafterleave",
+          "description": "Handle and stop propagation of the afterleave event."
+        },
+        {
+          "name": "bindbeforeenter",
+          "description": "Handle the beforeenter event."
+        },
+        {
+          "name": "catchbeforeenter",
+          "description": "Handle and stop propagation of the beforeenter event."
+        },
+        {
+          "name": "bindbeforeleave",
+          "description": "Handle the beforeleave event."
+        },
+        {
+          "name": "catchbeforeleave",
+          "description": "Handle and stop propagation of the beforeleave event."
+        },
+        {
+          "name": "bindclickoverlay",
+          "description": "Handle the clickoverlay event."
+        },
+        {
+          "name": "catchclickoverlay",
+          "description": "Handle and stop propagation of the clickoverlay event."
+        },
+        {
+          "name": "bindenter",
+          "description": "Handle the enter event."
+        },
+        {
+          "name": "catchenter",
+          "description": "Handle and stop propagation of the enter event."
+        },
+        {
+          "name": "bindleave",
+          "description": "Handle the leave event."
+        },
+        {
+          "name": "catchleave",
+          "description": "Handle and stop propagation of the leave event."
+        }
+      ]
+    },
+    {
+      "name": "page-meta",
+      "description": "Neux built-in component: page-meta.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "diminaRpxUnit",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundTextStyle",
+          "description": "Type: \"dark\" | \"light\"."
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundColorTop",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundColorBottom",
+          "description": "Type: string."
+        },
+        {
+          "name": "rootBackgroundColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "pageStyle",
+          "description": "Type: string."
+        },
+        {
+          "name": "pageFontSize",
+          "description": "Type: string."
+        },
+        {
+          "name": "rootFontSize",
+          "description": "Type: string."
+        },
+        {
+          "name": "pageOrientation",
+          "description": "Type: string."
+        },
+        {
+          "name": "scrollTop",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "scrollDuration",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindresize",
+          "description": "Handle the resize event."
+        },
+        {
+          "name": "catchresize",
+          "description": "Handle and stop propagation of the resize event."
+        },
+        {
+          "name": "bindscroll",
+          "description": "Handle the scroll event."
+        },
+        {
+          "name": "catchscroll",
+          "description": "Handle and stop propagation of the scroll event."
+        },
+        {
+          "name": "bindscrolldone",
+          "description": "Handle the scrolldone event."
+        },
+        {
+          "name": "catchscrolldone",
+          "description": "Handle and stop propagation of the scrolldone event."
+        }
+      ]
+    },
+    {
+      "name": "picker",
+      "description": "Neux built-in component: picker.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "headerText",
+          "description": "Type: string."
+        },
+        {
+          "name": "mode",
+          "description": "Type: \"selector\" | \"multiSelector\" | \"time\" | \"date\" | \"region\"."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "range",
+          "description": "Type: unknown[] | Record<string, unknown>."
+        },
+        {
+          "name": "rangeKey",
+          "description": "Type: string."
+        },
+        {
+          "name": "start",
+          "description": "Type: string."
+        },
+        {
+          "name": "end",
+          "description": "Type: string."
+        },
+        {
+          "name": "fields",
+          "description": "Type: \"year\" | \"month\" | \"day\"."
+        },
+        {
+          "name": "value",
+          "description": "Type: number | string | unknown[]."
+        },
+        {
+          "name": "customItem",
+          "description": "Type: string."
+        },
+        {
+          "name": "level",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindcancel",
+          "description": "Handle the cancel event."
+        },
+        {
+          "name": "catchcancel",
+          "description": "Handle and stop propagation of the cancel event."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindcolumnchange",
+          "description": "Handle the columnchange event."
+        },
+        {
+          "name": "catchcolumnchange",
+          "description": "Handle and stop propagation of the columnchange event."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        }
+      ]
+    },
+    {
+      "name": "picker-view",
+      "description": "Neux built-in component: picker-view.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "value",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "maskClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "indicatorStyle",
+          "description": "Type: string."
+        },
+        {
+          "name": "indicatorClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "maskStyle",
+          "description": "Type: string."
+        },
+        {
+          "name": "immediateChange",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        }
+      ]
+    },
+    {
+      "name": "picker-view-column",
+      "description": "Neux built-in component: picker-view-column.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        }
+      ]
+    },
+    {
+      "name": "progress",
+      "description": "Neux built-in component: progress.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "percent",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "showInfo",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "borderRadius",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "fontSize",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "strokeWidth",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        },
+        {
+          "name": "activeColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "active",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "activeMode",
+          "description": "Type: string."
+        },
+        {
+          "name": "duration",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindactiveend",
+          "description": "Handle the activeend event."
+        },
+        {
+          "name": "catchactiveend",
+          "description": "Handle and stop propagation of the activeend event."
+        }
+      ]
+    },
+    {
+      "name": "radio",
+      "description": "Neux built-in component: radio.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "value",
+          "description": "Type: string."
+        },
+        {
+          "name": "checked",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "radio-group",
+      "description": "Neux built-in component: radio-group.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        }
+      ]
+    },
+    {
+      "name": "rich-text",
+      "description": "Neux built-in component: rich-text.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "nodes",
+          "description": "Type: unknown[] | string."
+        },
+        {
+          "name": "space",
+          "description": "Type: \"ensp\" | \"emsp\" | \"nbsp\"."
+        },
+        {
+          "name": "userSelect",
+          "description": "Type: boolean."
+        }
+      ]
+    },
+    {
+      "name": "root-portal",
+      "description": "Neux built-in component: root-portal.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "enable",
+          "description": "Type: boolean."
+        }
+      ]
+    },
+    {
+      "name": "scroll-view",
+      "description": "Neux built-in component: scroll-view.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "scrollX",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "scrollY",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "upperThreshold",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "lowerThreshold",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "scrollTop",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "scrollLeft",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "scrollIntoView",
+          "description": "Type: string."
+        },
+        {
+          "name": "scrollWithAnimation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableBackToTop",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enablePassive",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "refresherEnabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "refresherThreshold",
+          "description": "Type: number."
+        },
+        {
+          "name": "refresherDefaultStyle",
+          "description": "Type: \"black\" | \"white\" | \"none\"."
+        },
+        {
+          "name": "refresherBackground",
+          "description": "Type: string."
+        },
+        {
+          "name": "refresherTriggered",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "bounces",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showScrollbar",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "fastDeceleration",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableFlex",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "scrollAnchoring",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enhanced",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "pagingEnabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "usingSticky",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "scrollEnabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "throttle",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "binddragend",
+          "description": "Handle the dragend event."
+        },
+        {
+          "name": "catchdragend",
+          "description": "Handle and stop propagation of the dragend event."
+        },
+        {
+          "name": "binddragging",
+          "description": "Handle the dragging event."
+        },
+        {
+          "name": "catchdragging",
+          "description": "Handle and stop propagation of the dragging event."
+        },
+        {
+          "name": "binddragstart",
+          "description": "Handle the dragstart event."
+        },
+        {
+          "name": "catchdragstart",
+          "description": "Handle and stop propagation of the dragstart event."
+        },
+        {
+          "name": "bindrefresherabort",
+          "description": "Handle the refresherabort event."
+        },
+        {
+          "name": "catchrefresherabort",
+          "description": "Handle and stop propagation of the refresherabort event."
+        },
+        {
+          "name": "bindrefresherpulling",
+          "description": "Handle the refresherpulling event."
+        },
+        {
+          "name": "catchrefresherpulling",
+          "description": "Handle and stop propagation of the refresherpulling event."
+        },
+        {
+          "name": "bindrefresherrefresh",
+          "description": "Handle the refresherrefresh event."
+        },
+        {
+          "name": "catchrefresherrefresh",
+          "description": "Handle and stop propagation of the refresherrefresh event."
+        },
+        {
+          "name": "bindrefresherrestore",
+          "description": "Handle the refresherrestore event."
+        },
+        {
+          "name": "catchrefresherrestore",
+          "description": "Handle and stop propagation of the refresherrestore event."
+        },
+        {
+          "name": "bindscroll",
+          "description": "Handle the scroll event."
+        },
+        {
+          "name": "catchscroll",
+          "description": "Handle and stop propagation of the scroll event."
+        },
+        {
+          "name": "bindscrolltolower",
+          "description": "Handle the scrolltolower event."
+        },
+        {
+          "name": "catchscrolltolower",
+          "description": "Handle and stop propagation of the scrolltolower event."
+        },
+        {
+          "name": "bindscrolltoupper",
+          "description": "Handle the scrolltoupper event."
+        },
+        {
+          "name": "catchscrolltoupper",
+          "description": "Handle and stop propagation of the scrolltoupper event."
+        },
+        {
+          "name": "bindtouchmove",
+          "description": "Handle the touchmove event."
+        },
+        {
+          "name": "catchtouchmove",
+          "description": "Handle and stop propagation of the touchmove event."
+        }
+      ]
+    },
+    {
+      "name": "slider",
+      "description": "Neux built-in component: slider.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "min",
+          "description": "Type: number."
+        },
+        {
+          "name": "max",
+          "description": "Type: number."
+        },
+        {
+          "name": "step",
+          "description": "Type: number."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "value",
+          "description": "Type: number."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        },
+        {
+          "name": "selectedColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "activeColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "backgroundColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "blockSize",
+          "description": "Type: number."
+        },
+        {
+          "name": "blockColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "showValue",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindchanging",
+          "description": "Handle the changing event."
+        },
+        {
+          "name": "catchchanging",
+          "description": "Handle and stop propagation of the changing event."
+        }
+      ]
+    },
+    {
+      "name": "swiper",
+      "description": "Neux built-in component: swiper.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "indicatorDots",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "indicatorColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "indicatorActiveColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoplay",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "current",
+          "description": "Type: number."
+        },
+        {
+          "name": "currentItemId",
+          "description": "Type: string."
+        },
+        {
+          "name": "skipHiddenItemLayout",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "interval",
+          "description": "Type: number."
+        },
+        {
+          "name": "duration",
+          "description": "Type: number."
+        },
+        {
+          "name": "circular",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "vertical",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "displayMultipleItems",
+          "description": "Type: number."
+        },
+        {
+          "name": "previousMargin",
+          "description": "Type: string."
+        },
+        {
+          "name": "easingFunction",
+          "description": "Type: \"default\" | \"linear\" | \"easeInCubic\" | \"easeOutCubic\" | \"easeInOutCubic\"."
+        },
+        {
+          "name": "nextMargin",
+          "description": "Type: string."
+        },
+        {
+          "name": "snapToEdge",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "bindanimationfinish",
+          "description": "Handle the animationfinish event."
+        },
+        {
+          "name": "catchanimationfinish",
+          "description": "Handle and stop propagation of the animationfinish event."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindtransition",
+          "description": "Handle the transition event."
+        },
+        {
+          "name": "catchtransition",
+          "description": "Handle and stop propagation of the transition event."
+        }
+      ]
+    },
+    {
+      "name": "swiper-item",
+      "description": "Neux built-in component: swiper-item.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "itemId",
+          "description": "Type: string."
+        }
+      ]
+    },
+    {
+      "name": "switch",
+      "description": "Neux built-in component: switch.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "checked",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "type",
+          "description": "Type: \"switch\" | \"checkbox\"."
+        },
+        {
+          "name": "color",
+          "description": "Type: string."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        }
+      ]
+    },
+    {
+      "name": "template",
+      "description": "Neux built-in component: template.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "is",
+          "description": "Type: string."
+        },
+        {
+          "name": "data",
+          "description": "Type: Record<string, unknown>."
+        }
+      ]
+    },
+    {
+      "name": "text",
+      "description": "Neux built-in component: text.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "selectable",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "userSelect",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "space",
+          "description": "Type: \"ensp\" | \"emsp\" | \"nbsp\"."
+        },
+        {
+          "name": "decode",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "textarea",
+      "description": "Neux built-in component: textarea.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "name",
+          "description": "Type: string."
+        },
+        {
+          "name": "value",
+          "description": "Type: string."
+        },
+        {
+          "name": "placeholder",
+          "description": "Type: string."
+        },
+        {
+          "name": "placeholderStyle",
+          "description": "Type: string | Record<string, unknown>."
+        },
+        {
+          "name": "disabled",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "maxlength",
+          "description": "Type: number."
+        },
+        {
+          "name": "autoFocus",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "focus",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoHeight",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "cursorSpacing",
+          "description": "Type: number."
+        },
+        {
+          "name": "cursor",
+          "description": "Type: number."
+        },
+        {
+          "name": "showConfirmBar",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "selectionStart",
+          "description": "Type: number."
+        },
+        {
+          "name": "selectionEnd",
+          "description": "Type: number."
+        },
+        {
+          "name": "adjustPosition",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "holdKeyboard",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "disableDefaultPadding",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "confirmType",
+          "description": "Type: \"send\" | \"search\" | \"next\" | \"go\" | \"done\" | \"return\"."
+        },
+        {
+          "name": "confirmHold",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "adjustKeyboardTo",
+          "description": "Type: \"cursor\" | \"bottom\"."
+        },
+        {
+          "name": "placeholderClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "fixed",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "keyboardAppearance",
+          "description": "Type: string."
+        },
+        {
+          "name": "confirm",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoFill",
+          "description": "Type: string."
+        },
+        {
+          "name": "bindblur",
+          "description": "Handle the blur event."
+        },
+        {
+          "name": "catchblur",
+          "description": "Handle and stop propagation of the blur event."
+        },
+        {
+          "name": "bindchange",
+          "description": "Handle the change event."
+        },
+        {
+          "name": "catchchange",
+          "description": "Handle and stop propagation of the change event."
+        },
+        {
+          "name": "bindconfirm",
+          "description": "Handle the confirm event."
+        },
+        {
+          "name": "catchconfirm",
+          "description": "Handle and stop propagation of the confirm event."
+        },
+        {
+          "name": "bindfocus",
+          "description": "Handle the focus event."
+        },
+        {
+          "name": "catchfocus",
+          "description": "Handle and stop propagation of the focus event."
+        },
+        {
+          "name": "bindinput",
+          "description": "Handle the input event."
+        },
+        {
+          "name": "catchinput",
+          "description": "Handle and stop propagation of the input event."
+        },
+        {
+          "name": "bindlinechange",
+          "description": "Handle the linechange event."
+        },
+        {
+          "name": "catchlinechange",
+          "description": "Handle and stop propagation of the linechange event."
+        }
+      ]
+    },
+    {
+      "name": "video",
+      "description": "Neux built-in component: video.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "src",
+          "description": "Type: string."
+        },
+        {
+          "name": "duration",
+          "description": "Type: number."
+        },
+        {
+          "name": "controls",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoplay",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "loop",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "muted",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "initialTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "objectFit",
+          "description": "Type: string."
+        },
+        {
+          "name": "poster",
+          "description": "Type: string."
+        },
+        {
+          "name": "pageGesture",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "direction",
+          "description": "Type: number | string."
+        },
+        {
+          "name": "showProgress",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showFullscreenBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showPlayBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showCenterPlayBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableProgressGesture",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showMuteBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "title",
+          "description": "Type: string."
+        },
+        {
+          "name": "playBtnPosition",
+          "description": "Type: string."
+        },
+        {
+          "name": "enablePlayGesture",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoPauseIfNavigate",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "autoPauseIfOpenNative",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "vslideGesture",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "vslideGestureInFullscreen",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "adUnitId",
+          "description": "Type: string."
+        },
+        {
+          "name": "unitId",
+          "description": "Type: string."
+        },
+        {
+          "name": "adPlayTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "danmuBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableDanmu",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "danmuList",
+          "description": "Type: unknown[]."
+        },
+        {
+          "name": "live",
+          "description": "Type: number | boolean."
+        },
+        {
+          "name": "customCache",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "blockSize",
+          "description": "Type: number."
+        },
+        {
+          "name": "posterForCrawler",
+          "description": "Type: string."
+        },
+        {
+          "name": "showLiveBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showBottomProgress",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showCenterProgressDuration",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showVolumeBtn",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showCastingButton",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "seekType",
+          "description": "Type: string."
+        },
+        {
+          "name": "pictureInPictureMode",
+          "description": "Type: unknown[] | string."
+        },
+        {
+          "name": "pictureInPictureShowProgress",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "enableAutoRotation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showScreenLockButton",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showSnapshotButton",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "showBackgroundPlaybackButton",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "backgroundPoster",
+          "description": "Type: string."
+        },
+        {
+          "name": "referrerPolicy",
+          "description": "Type: string."
+        },
+        {
+          "name": "isDrm",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "provisionUrl",
+          "description": "Type: string."
+        },
+        {
+          "name": "certificateUrl",
+          "description": "Type: string."
+        },
+        {
+          "name": "licenseUrl",
+          "description": "Type: string."
+        },
+        {
+          "name": "preferredPeakBitRate",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindcontrolstoggle",
+          "description": "Handle the controlstoggle event."
+        },
+        {
+          "name": "catchcontrolstoggle",
+          "description": "Handle and stop propagation of the controlstoggle event."
+        },
+        {
+          "name": "bindended",
+          "description": "Handle the ended event."
+        },
+        {
+          "name": "catchended",
+          "description": "Handle and stop propagation of the ended event."
+        },
+        {
+          "name": "bindenterpictureinpicture",
+          "description": "Handle the enterpictureinpicture event."
+        },
+        {
+          "name": "catchenterpictureinpicture",
+          "description": "Handle and stop propagation of the enterpictureinpicture event."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindfullscreenchange",
+          "description": "Handle the fullscreenchange event."
+        },
+        {
+          "name": "catchfullscreenchange",
+          "description": "Handle and stop propagation of the fullscreenchange event."
+        },
+        {
+          "name": "bindinsertweblayerfailed",
+          "description": "Handle the insertweblayerfailed event."
+        },
+        {
+          "name": "catchinsertweblayerfailed",
+          "description": "Handle and stop propagation of the insertweblayerfailed event."
+        },
+        {
+          "name": "bindinsertweblayersuccess",
+          "description": "Handle the insertweblayersuccess event."
+        },
+        {
+          "name": "catchinsertweblayersuccess",
+          "description": "Handle and stop propagation of the insertweblayersuccess event."
+        },
+        {
+          "name": "bindleavepictureinpicture",
+          "description": "Handle the leavepictureinpicture event."
+        },
+        {
+          "name": "catchleavepictureinpicture",
+          "description": "Handle and stop propagation of the leavepictureinpicture event."
+        },
+        {
+          "name": "bindloadeddata",
+          "description": "Handle the loadeddata event."
+        },
+        {
+          "name": "catchloadeddata",
+          "description": "Handle and stop propagation of the loadeddata event."
+        },
+        {
+          "name": "bindloadedmetadata",
+          "description": "Handle the loadedmetadata event."
+        },
+        {
+          "name": "catchloadedmetadata",
+          "description": "Handle and stop propagation of the loadedmetadata event."
+        },
+        {
+          "name": "bindloadstart",
+          "description": "Handle the loadstart event."
+        },
+        {
+          "name": "catchloadstart",
+          "description": "Handle and stop propagation of the loadstart event."
+        },
+        {
+          "name": "bindpause",
+          "description": "Handle the pause event."
+        },
+        {
+          "name": "catchpause",
+          "description": "Handle and stop propagation of the pause event."
+        },
+        {
+          "name": "bindplay",
+          "description": "Handle the play event."
+        },
+        {
+          "name": "catchplay",
+          "description": "Handle and stop propagation of the play event."
+        },
+        {
+          "name": "bindpreloadedmetadata",
+          "description": "Handle the preloadedmetadata event."
+        },
+        {
+          "name": "catchpreloadedmetadata",
+          "description": "Handle and stop propagation of the preloadedmetadata event."
+        },
+        {
+          "name": "bindprogress",
+          "description": "Handle the progress event."
+        },
+        {
+          "name": "catchprogress",
+          "description": "Handle and stop propagation of the progress event."
+        },
+        {
+          "name": "bindrendererror",
+          "description": "Handle the rendererror event."
+        },
+        {
+          "name": "catchrendererror",
+          "description": "Handle and stop propagation of the rendererror event."
+        },
+        {
+          "name": "bindseekcomplete",
+          "description": "Handle the seekcomplete event."
+        },
+        {
+          "name": "catchseekcomplete",
+          "description": "Handle and stop propagation of the seekcomplete event."
+        },
+        {
+          "name": "bindseeked",
+          "description": "Handle the seeked event."
+        },
+        {
+          "name": "catchseeked",
+          "description": "Handle and stop propagation of the seeked event."
+        },
+        {
+          "name": "bindseeking",
+          "description": "Handle the seeking event."
+        },
+        {
+          "name": "catchseeking",
+          "description": "Handle and stop propagation of the seeking event."
+        },
+        {
+          "name": "bindtimeupdate",
+          "description": "Handle the timeupdate event."
+        },
+        {
+          "name": "catchtimeupdate",
+          "description": "Handle and stop propagation of the timeupdate event."
+        },
+        {
+          "name": "bindwaiting",
+          "description": "Handle the waiting event."
+        },
+        {
+          "name": "catchwaiting",
+          "description": "Handle and stop propagation of the waiting event."
+        }
+      ]
+    },
+    {
+      "name": "view",
+      "description": "Neux built-in component: view.",
+      "attributes": [
+        {
+          "name": "id",
+          "description": "Unique element identifier."
+        },
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "inline",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hover",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "sessionFrom",
+          "description": "Type: string."
+        },
+        {
+          "name": "hoverClass",
+          "description": "Type: string."
+        },
+        {
+          "name": "hoverStopPropagation",
+          "description": "Type: boolean."
+        },
+        {
+          "name": "hoverStartTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "hoverStayTime",
+          "description": "Type: number."
+        },
+        {
+          "name": "bindtap",
+          "description": "Handle the tap event."
+        },
+        {
+          "name": "catchtap",
+          "description": "Handle and stop propagation of the tap event."
+        }
+      ]
+    },
+    {
+      "name": "web-view",
+      "description": "Neux built-in component: web-view.",
+      "attributes": [
+        {
+          "name": "class",
+          "description": "Space-separated style class names."
+        },
+        {
+          "name": "style",
+          "description": "Inline style declarations."
+        },
+        {
+          "name": "id",
+          "description": "Type: string."
+        },
+        {
+          "name": "src",
+          "description": "Type: string."
+        },
+        {
+          "name": "progressColor",
+          "description": "Type: string."
+        },
+        {
+          "name": "binderror",
+          "description": "Handle the error event."
+        },
+        {
+          "name": "catcherror",
+          "description": "Handle and stop propagation of the error event."
+        },
+        {
+          "name": "bindload",
+          "description": "Handle the load event."
+        },
+        {
+          "name": "catchload",
+          "description": "Handle and stop propagation of the load event."
+        },
+        {
+          "name": "bindmessage",
+          "description": "Handle the message event."
+        },
+        {
+          "name": "catchmessage",
+          "description": "Handle and stop propagation of the message event."
+        }
+      ]
+    }
+  ],
+  "globalAttributes": [
+    {
+      "name": "nx:if",
+      "description": "Conditionally render this node."
+    },
+    {
+      "name": "nx:elif",
+      "description": "Render this node when the preceding condition is false."
+    },
+    {
+      "name": "nx:else",
+      "description": "Render this node when preceding conditions are false."
+    },
+    {
+      "name": "nx:for",
+      "description": "Render this node for each item in a collection."
+    },
+    {
+      "name": "nx:for-item",
+      "description": "Name of the current item in nx:for."
+    },
+    {
+      "name": "nx:for-index",
+      "description": "Name of the current index in nx:for."
+    },
+    {
+      "name": "nx:key",
+      "description": "Stable key for nx:for rendering."
+    }
+  ]
+}

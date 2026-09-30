@@ -1,0 +1,65 @@
+name: Neux CI/CD
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+concurrency:
+  group: neux-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build -- --json
+      - uses: actions/upload-artifact@v5
+        with:
+          name: neux-wgt-${{ github.sha }}
+          path: dist/release/*.wgt
+          if-no-files-found: error
+          retention-days: 14
+
+  upload-preview:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment: neux-preview
+    env:
+      NEUX_CLI_SERVER_URL: https://demo-c.paas.superapp.neuvision.cn
+      NEUX_CLI_APP_ID: nxkw5ccasbkpn1z
+      NEUX_CLI_KEY_NXKW5CCASBKPN1Z: ${{ secrets.NEUX_CLI_KEY_NXKW5CCASBKPN1Z }}
+      NEUX_VERSION_CODE_OFFSET: 1000
+
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Validate signed-service configuration
+        run: |
+          test -n "$NEUX_CLI_KEY_NXKW5CCASBKPN1Z"
+          npx --no-install neux config doctor --json
+      - name: Upload preview package
+        run: |
+          version_code="$((NEUX_VERSION_CODE_OFFSET + GITHUB_RUN_NUMBER))"
+          version_name="1.0.${GITHUB_RUN_NUMBER}"
+          npx --no-install neux upload --preview \
+            --version-name "$version_name" \
+            --version-code "$version_code" \
+            --changelog "GitHub Actions run ${GITHUB_RUN_NUMBER} (${GITHUB_SHA})" \
+            --json

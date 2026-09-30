@@ -1,0 +1,38 @@
+<!-- Edit form uses the shared appearance classes. -->
+<view class="page {{appearance.themeClass}} {{appearance.directionClass}} {{appearance.fontClass}}">
+  <!-- Avatar picker -->
+  <view class="avatar-area" bindtap="chooseAvatar">
+    <image nx:if="{{avatar}}" class="avatar" mode="aspectFill" src="{{avatar}}" />
+    <view nx:else class="avatar placeholder">+</view>
+    <text>Choose avatar</text>
+  </view>
+
+  <!-- Profile fields -->
+  <view class="form">
+    <input
+      class="field-input"
+      data-field="name"
+      value="{{name}}"
+      placeholder="Name"
+      bindinput="onInput"
+    />
+    <textarea
+      class="field-textarea"
+      data-field="bio"
+      value="{{bio}}"
+      placeholder="Short introduction"
+      bindinput="onInput"
+    />
+  </view>
+
+  <!-- Save locally and submit the profile data. -->
+  <button
+    type="primary"
+    loading="{{submitting}}"
+    disabled="{{submitting}}"
+    bindtap="saveProfile"
+  >
+    Save
+  </button>
+  <text nx:if="{{result}}" class="request-error">{{result}}</text>
+</view>

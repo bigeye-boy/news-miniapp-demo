@@ -1,0 +1,14 @@
+<view class="drawer {{theme}} {{visible ? 'drawer-visible' : ''}}" bindtap="onMaskTap">
+  <view class="drawer-panel" catchtap="stopPropagation">
+    <!-- Drawer header -->
+    <view class="drawer-header">
+      <text class="drawer-title">{{title}}</text>
+      <view nx:if="{{showClose}}" class="drawer-close" bindtap="onCloseTap">×</view>
+    </view>
+
+    <!-- Drawer content -->
+    <view class="drawer-body">
+      <slot />
+    </view>
+  </view>
+</view>

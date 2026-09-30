@@ -1,0 +1,10 @@
+{
+  "name": "npm-components",
+  "version": "0.1.0",
+  "description": "Small demo mini-program components for validating npm package consumption.",
+  "miniprogram": "miniprogram",
+  "files": [
+    "miniprogram",
+    "README.md"
+  ]
+}

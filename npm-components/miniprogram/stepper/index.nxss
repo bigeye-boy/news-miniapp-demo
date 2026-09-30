@@ -1,0 +1,33 @@
+.stepper {
+  display: flex;
+  align-items: center;
+  gap: 16rpx;
+}
+
+.button {
+  min-width: 64rpx;
+  height: 56rpx;
+  padding: 0;
+  border: 0;
+  border-radius: 12rpx;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 32rpx;
+  line-height: 56rpx;
+}
+
+.value {
+  min-width: 44rpx;
+  color: #0f172a;
+  font-size: 32rpx;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stepper.theme-dark .value {
+  color: #f4f7f5;
+}
+
+.stepper.theme-dark .button {
+  background: #2d7950;
+}

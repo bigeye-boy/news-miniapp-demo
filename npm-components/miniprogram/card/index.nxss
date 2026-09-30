@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 12rpx;
+  padding: 28rpx;
+  border: 2rpx solid #dbeafe;
+  border-radius: 20rpx;
+  background: #ffffff;
+  box-shadow: 0 10rpx 28rpx rgba(15, 23, 42, 0.08);
+}
+
+.title,
+.subtitle {
+  display: block;
+}
+
+.title {
+  color: #0f172a;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 24rpx;
+}
+
+.card.theme-dark {
+  border-color: #33453b;
+  background: #18231f;
+  box-shadow: 0 10rpx 28rpx rgba(0, 0, 0, 0.22);
+}
+
+.card.theme-dark .title {
+  color: #f4f7f5;
+}
+
+.card.theme-dark .subtitle {
+  color: #b9c8c0;
+}
