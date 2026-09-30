@@ -40,8 +40,8 @@ jobs:
     environment: neux-upload
     env:
       NEUX_CLI_SERVER_URL: https://demo-c.paas.superapp.neuvision.cn
-      NEUX_CLI_APP_ID: nxkw5ccasbkpn1z
-      NEUX_CLI_KEY_NXKW5CCASBKPN1Z: ${{ secrets.NEUX_CLI_KEY_NXKW5CCASBKPN1Z }}
+      NEUX_CLI_APP_ID: nxb6t2e7b73c83e
+      NEUX_CLI_KEY_NXB6T2E7B73C83E: ${{ secrets.NEUX_CLI_KEY_NXB6T2E7B73C83E }}
       NEUX_VERSION_CODE_OFFSET: 1000
 
     steps:
@@ -54,7 +54,7 @@ jobs:
       - run: npm run build:npm
       - name: Validate signed-service configuration
         run: |
-          test -n "$NEUX_CLI_KEY_NXKW5CCASBKPN1Z"
+          test -n "$NEUX_CLI_KEY_NXB6T2E7B73C83E"
           npx --no-install neux config doctor --json
       - name: Upload preview package
         run: |
