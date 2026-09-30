@@ -107,10 +107,13 @@ npm run upload
 The GitHub Actions workflow at `.github/workflows/neux-cicd.yml` builds every
 pull request and push to `main`, then retains the generated `.wgt` package as
 a workflow artifact for 14 days. A push to `main` also uploads a preview
-package after the `neux-upload` GitHub Environment permits the deployment.
+package after the `neux-upload` GitHub Environment permits the deployment,
+then submits the uploaded version for audit after the `neux-submit` Environment
+permits the second deployment step.
 
-Before enabling uploads, create the `neux-upload` Environment in the GitHub
-repository and add this Environment secret:
+Before enabling uploads and audit submission, create the `neux-upload` and
+`neux-submit` Environments in the GitHub repository. Add this Environment
+secret to both environments:
 
 ```text
 NEUX_CLI_KEY_NXB6T2E7B73C83E
