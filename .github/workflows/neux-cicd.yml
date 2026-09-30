@@ -61,6 +61,7 @@ jobs:
       - name: Upload preview package
         id: upload
         run: |
+          set -o pipefail
           version_code="$((NEUX_VERSION_CODE_OFFSET + GITHUB_RUN_NUMBER))"
           version_name="1.0.${GITHUB_RUN_NUMBER}"
           response_file="$(mktemp)"
