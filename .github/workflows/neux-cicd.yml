@@ -24,6 +24,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm run build:npm
       - run: npm run build -- --json
       - uses: actions/upload-artifact@v5
         with:
@@ -50,6 +51,7 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
+      - run: npm run build:npm
       - name: Validate signed-service configuration
         run: |
           test -n "$NEUX_CLI_KEY_NXKW5CCASBKPN1Z"
