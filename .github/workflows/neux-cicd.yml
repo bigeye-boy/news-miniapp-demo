@@ -11,11 +11,12 @@ permissions:
 
 concurrency:
   group: neux-${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
 
     steps:
       - uses: actions/checkout@v6
@@ -36,7 +37,8 @@ jobs:
   upload-preview:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     environment: neux-upload
     outputs:
       version_id: ${{ steps.upload.outputs.version_id }}
@@ -44,7 +46,7 @@ jobs:
       NEUX_CLI_SERVER_URL: https://demo-c.paas.superapp.neuvision.cn
       NEUX_CLI_APP_ID: nxb6t2e7b73c83e
       NEUX_CLI_KEY_NXB6T2E7B73C83E: ${{ secrets.NEUX_CLI_KEY_NXB6T2E7B73C83E }}
-      NEUX_VERSION_CODE_OFFSET: 1000
+      NEUX_VERSION_CODE_OFFSET: ${{ vars.NEUX_VERSION_CODE_OFFSET || 1000 }}
 
     steps:
       - uses: actions/checkout@v6
@@ -95,12 +97,14 @@ jobs:
   submit-audit:
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: upload-preview
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     environment: neux-submit
     env:
       NEUX_CLI_SERVER_URL: https://demo-c.paas.superapp.neuvision.cn
       NEUX_CLI_APP_ID: nxb6t2e7b73c83e
       NEUX_CLI_KEY_NXB6T2E7B73C83E: ${{ secrets.NEUX_CLI_KEY_NXB6T2E7B73C83E }}
+      NEUX_VERSION_ID: ${{ needs.upload-preview.outputs.version_id }}
 
     steps:
       - uses: actions/checkout@v6
@@ -116,5 +120,5 @@ jobs:
       - name: Submit uploaded version for audit
         run: |
           npx --no-install neux submit \
-            --version-id "${{ needs.upload-preview.outputs.version_id }}" \
+            --version-id "$NEUX_VERSION_ID" \
             --json
